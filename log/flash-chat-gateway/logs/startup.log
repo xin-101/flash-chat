@@ -1,0 +1,92 @@
+2026-06-24T20:02:43.128+08:00  INFO 36804 --- [flash-chat-gateway] [       Thread-1] c.a.n.c.a.r.identify.CredentialWatcher   : null No credential found
+2026-06-24T20:02:43.120+08:00  INFO 36804 --- [flash-chat-gateway] [           main] c.alibaba.nacos.client.utils.ParamUtil   : [settings] [req-serv] nacos-server port:8848
+2026-06-24T20:02:43.131+08:00  INFO 36804 --- [flash-chat-gateway] [           main] c.alibaba.nacos.client.utils.ParamUtil   : [settings] [http-client] connect timeout:1000
+2026-06-24T20:02:43.135+08:00  INFO 36804 --- [flash-chat-gateway] [           main] c.alibaba.nacos.client.utils.ParamUtil   : PER_TASK_CONFIG_SIZE: 3000.0
+2026-06-24T20:02:43.213+08:00  INFO 36804 --- [flash-chat-gateway] [           main] com.alibaba.nacos.common.labels          : DefaultLabelsCollectorManager get labels.....
+2026-06-24T20:02:43.213+08:00  INFO 36804 --- [flash-chat-gateway] [           main] com.alibaba.nacos.common.labels          : Process LabelsCollector with [name:defaultNacosLabelsCollector]
+2026-06-24T20:02:43.213+08:00  INFO 36804 --- [flash-chat-gateway] [           main] com.alibaba.nacos.common.labels          : default nacos collect properties raw labels: null
+2026-06-24T20:02:43.214+08:00  INFO 36804 --- [flash-chat-gateway] [           main] com.alibaba.nacos.common.labels          : default nacos collect properties labels: {}
+2026-06-24T20:02:43.214+08:00  INFO 36804 --- [flash-chat-gateway] [           main] com.alibaba.nacos.common.labels          : default nacos collect jvm raw labels: null
+2026-06-24T20:02:43.214+08:00  INFO 36804 --- [flash-chat-gateway] [           main] com.alibaba.nacos.common.labels          : default nacos collect jvm labels: {}
+2026-06-24T20:02:43.214+08:00  INFO 36804 --- [flash-chat-gateway] [           main] com.alibaba.nacos.common.labels          : default nacos collect env raw labels: null
+2026-06-24T20:02:43.214+08:00  INFO 36804 --- [flash-chat-gateway] [           main] com.alibaba.nacos.common.labels          : default nacos collect env labels: {}
+2026-06-24T20:02:43.214+08:00  INFO 36804 --- [flash-chat-gateway] [           main] com.alibaba.nacos.common.labels          : DefaultLabelsCollectorManager get labels finished,labels :{}
+2026-06-24T20:02:43.220+08:00  INFO 36804 --- [flash-chat-gateway] [           main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2026-06-24T20:02:43.220+08:00  INFO 36804 --- [flash-chat-gateway] [           main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.4)
+
+[flash-chat-gateway,dev] 2026-06-24 20:02:43.454  INFO 36804 --- [           main] c.a.n.c.c.i.LocalConfigInfoProcessor     : LOCAL_SNAPSHOT_PATH:C:\Users\26352\nacos\config
+[flash-chat-gateway,dev] 2026-06-24 20:02:43.457  INFO 36804 --- [           main] c.a.n.c.r.client                         : [RpcClientFactory] create a new rpc client of 4a63bbab-a780-40ee-88f5-73bde178a403_config-0
+[flash-chat-gateway,dev] 2026-06-24 20:02:43.479  INFO 36804 --- [           main] c.a.n.c.r.client                         : [4a63bbab-a780-40ee-88f5-73bde178a403_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda/0x000002c336381488
+[flash-chat-gateway,dev] 2026-06-24 20:02:43.479  INFO 36804 --- [           main] c.a.n.c.r.client                         : [4a63bbab-a780-40ee-88f5-73bde178a403_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda/0x000002c336381898
+[flash-chat-gateway,dev] 2026-06-24 20:02:43.479  INFO 36804 --- [           main] c.a.n.c.r.client                         : [4a63bbab-a780-40ee-88f5-73bde178a403_config-0] Registry connection listener to current client:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$1
+[flash-chat-gateway,dev] 2026-06-24 20:02:43.479  INFO 36804 --- [           main] c.a.n.c.r.client                         : [4a63bbab-a780-40ee-88f5-73bde178a403_config-0] RpcClient init, ServerListFactory = com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$2
+[flash-chat-gateway,dev] 2026-06-24 20:02:43.483  INFO 36804 --- [           main] c.a.n.c.r.client                         : [4a63bbab-a780-40ee-88f5-73bde178a403_config-0] Try to connect to server on start up, server: {serverIp = '127.0.0.1', server main port = 8848}
+[flash-chat-gateway,dev] 2026-06-24 20:02:43.504  INFO 36804 --- [           main] c.a.n.c.r.c.g.GrpcClient                 : grpc client connection server:127.0.0.1 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+[flash-chat-gateway,dev] 2026-06-24 20:02:43.963  INFO 36804 --- [           main] c.a.n.c.a.AbstractAbilityControlManager  : Ready to get current node abilities...
+[flash-chat-gateway,dev] 2026-06-24 20:02:43.964  INFO 36804 --- [           main] c.a.n.c.a.AbstractAbilityControlManager  : Ready to initialize current node abilities, support modes: [SDK_CLIENT]
+[flash-chat-gateway,dev] 2026-06-24 20:02:43.965  INFO 36804 --- [           main] c.a.n.c.a.AbstractAbilityControlManager  : Initialize current abilities finish...
+[flash-chat-gateway,dev] 2026-06-24 20:02:43.965  INFO 36804 --- [           main] c.a.n.c.a.d.NacosAbilityManagerHolder    : [AbilityControlManager] Successfully initialize AbilityControlManager
+[flash-chat-gateway,dev] 2026-06-24 20:02:43.986  INFO 36804 --- [           main] c.a.n.c.r.client                         : [4a63bbab-a780-40ee-88f5-73bde178a403_config-0] Success to connect to server [127.0.0.1:8848] on start up, connectionId = 1782302563894_172.17.0.1_54604
+[flash-chat-gateway,dev] 2026-06-24 20:02:43.986  INFO 36804 --- [remote.worker.0] c.a.n.c.r.client                         : [4a63bbab-a780-40ee-88f5-73bde178a403_config-0] Notify connected event to listeners.
+[flash-chat-gateway,dev] 2026-06-24 20:02:43.986  INFO 36804 --- [           main] c.a.n.c.r.client                         : [4a63bbab-a780-40ee-88f5-73bde178a403_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+[flash-chat-gateway,dev] 2026-06-24 20:02:43.986  INFO 36804 --- [remote.worker.0] c.a.n.c.c.i.ClientWorker                 : [4a63bbab-a780-40ee-88f5-73bde178a403_config-0] Connected,notify listen context...
+[flash-chat-gateway,dev] 2026-06-24 20:02:43.986  INFO 36804 --- [           main] c.a.n.c.r.client                         : [4a63bbab-a780-40ee-88f5-73bde178a403_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda/0x000002c3364d4400
+[flash-chat-gateway,dev] 2026-06-24 20:02:44.073  INFO 36804 --- [           main] c.a.n.c.c.i.Limiter                      : limitTime:5.0
+[flash-chat-gateway,dev] 2026-06-24 20:02:44.092  WARN 36804 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-gateway] & group[DEFAULT_GROUP]
+[flash-chat-gateway,dev] 2026-06-24 20:02:44.098  WARN 36804 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-gateway.properties] & group[DEFAULT_GROUP]
+[flash-chat-gateway,dev] 2026-06-24 20:02:44.105  WARN 36804 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-gateway-dev.properties] & group[DEFAULT_GROUP]
+[flash-chat-gateway,dev] 2026-06-24 20:02:44.106  INFO 36804 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-flash-chat-gateway-dev.properties,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-flash-chat-gateway.properties,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-flash-chat-gateway,DEFAULT_GROUP'}]
+[flash-chat-gateway,dev] 2026-06-24 20:02:44.134  INFO 36804 --- [           main] i.g.z.g.GatewayApplication               : The following 1 profile is active: "dev"
+[flash-chat-gateway,dev] 2026-06-24 20:02:44.583  INFO 36804 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+[flash-chat-gateway,dev] 2026-06-24 20:02:44.586  INFO 36804 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[flash-chat-gateway,dev] 2026-06-24 20:02:44.600  INFO 36804 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+[flash-chat-gateway,dev] 2026-06-24 20:02:44.716  INFO 36804 --- [           main] o.s.c.c.s.GenericScope                   : BeanFactory id=e9749078-0aae-3f84-8b09-b0c7f047176c
+[flash-chat-gateway,dev] 2026-06-24 20:02:44.841  WARN 36804 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+[flash-chat-gateway,dev] 2026-06-24 20:02:44.843  WARN 36804 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+[flash-chat-gateway,dev] 2026-06-24 20:02:44.845  WARN 36804 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+[flash-chat-gateway,dev] 2026-06-24 20:02:44.845  WARN 36804 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+[flash-chat-gateway,dev] 2026-06-24 20:02:44.847  WARN 36804 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+[flash-chat-gateway,dev] 2026-06-24 20:02:45.910  INFO 36804 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+[flash-chat-gateway,dev] 2026-06-24 20:02:45.910  INFO 36804 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+[flash-chat-gateway,dev] 2026-06-24 20:02:45.910  INFO 36804 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+[flash-chat-gateway,dev] 2026-06-24 20:02:45.910  INFO 36804 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+[flash-chat-gateway,dev] 2026-06-24 20:02:45.910  INFO 36804 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+[flash-chat-gateway,dev] 2026-06-24 20:02:45.910  INFO 36804 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+[flash-chat-gateway,dev] 2026-06-24 20:02:45.910  INFO 36804 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+[flash-chat-gateway,dev] 2026-06-24 20:02:45.911  INFO 36804 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+[flash-chat-gateway,dev] 2026-06-24 20:02:45.911  INFO 36804 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+[flash-chat-gateway,dev] 2026-06-24 20:02:45.911  INFO 36804 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+[flash-chat-gateway,dev] 2026-06-24 20:02:45.911  INFO 36804 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+[flash-chat-gateway,dev] 2026-06-24 20:02:45.911  INFO 36804 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+[flash-chat-gateway,dev] 2026-06-24 20:02:45.911  INFO 36804 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+[flash-chat-gateway,dev] 2026-06-24 20:02:45.911  INFO 36804 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+[flash-chat-gateway,dev] 2026-06-24 20:02:46.277  WARN 36804 --- [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[flash-chat-gateway,dev] 2026-06-24 20:02:48.433  WARN 36804 --- [           main] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+[flash-chat-gateway,dev] 2026-06-24 20:02:48.446  INFO 36804 --- [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[flash-chat-gateway,dev] 2026-06-24 20:02:48.458 ERROR 36804 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 1000 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 1000 or configure this application to listen on another port.
+
+[flash-chat-gateway,dev] 2026-06-24 20:02:49.439  WARN 36804 --- [       Thread-6] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Start destroying Publisher
+[flash-chat-gateway,dev] 2026-06-24 20:02:49.439  WARN 36804 --- [       Thread-2] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Start destroying common HttpClient
+[flash-chat-gateway,dev] 2026-06-24 20:02:49.439  WARN 36804 --- [       Thread-6] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Destruction of the end

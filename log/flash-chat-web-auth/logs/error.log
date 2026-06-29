@@ -1,0 +1,296 @@
+[flash-chat-web-auth,dev] 2026-06-28 09:32:29.976 ERROR 29672 --- [nio-8890-exec-6] i.g.z.a.e.GlobalExceptionHandler         : /auth/sendSms request error
+
+org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'phone' for method parameter type String is not present
+	at org.springframework.web.method.annotation.RequestParamMethodArgumentResolver.handleMissingValueInternal(RequestParamMethodArgumentResolver.java:217)
+	at org.springframework.web.method.annotation.RequestParamMethodArgumentResolver.handleMissingValue(RequestParamMethodArgumentResolver.java:193)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:125)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:178)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:925)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:830)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[flash-chat-web-auth,dev] 2026-06-28 10:07:17.283 ERROR 1800 --- [         task-1] i.g.z.a.s.i.SMSServiceImpl               : 短信发送失败，手机号：18888888888，验证码：880070
+
+com.tencentcloudapi.common.exception.TencentCloudSDKException: The SecretId is not found, please ensure that your SecretId is correct.
+	at com.tencentcloudapi.common.AbstractClient.internalRequest(AbstractClient.java:386)
+	at com.tencentcloudapi.sms.v20210111.SmsClient.SendSms(SmsClient.java:382)
+	at io.github.zh.auth.utils.sms.SendSmsUtil.sendSms(SendSmsUtil.java:118)
+	at io.github.zh.auth.service.impl.SMSServiceImpl.sendSms(SMSServiceImpl.java:18)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:351)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:113)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[flash-chat-web-auth,dev] 2026-06-28 11:20:06.374 ERROR 27212 --- [         task-1] i.g.z.a.s.i.SMSServiceImpl               : 短信发送失败，手机号：18888888888，验证码：872645
+
+com.tencentcloudapi.common.exception.TencentCloudSDKException: The SecretId is not found, please ensure that your SecretId is correct.
+	at com.tencentcloudapi.common.AbstractClient.internalRequest(AbstractClient.java:386)
+	at com.tencentcloudapi.sms.v20210111.SmsClient.SendSms(SmsClient.java:382)
+	at io.github.zh.auth.utils.sms.SendSmsUtil.sendSms(SendSmsUtil.java:118)
+	at io.github.zh.auth.service.impl.SMSServiceImpl.sendSms(SMSServiceImpl.java:25)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:351)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:113)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[flash-chat-web-auth,dev] 2026-06-28 11:22:49.022 ERROR 6708 --- [         task-1] i.g.z.a.s.i.SMSServiceImpl               : 短信发送失败，手机号：18888888888，验证码：168402
+
+com.tencentcloudapi.common.exception.TencentCloudSDKException: The SecretId is not found, please ensure that your SecretId is correct.
+	at com.tencentcloudapi.common.AbstractClient.internalRequest(AbstractClient.java:386)
+	at com.tencentcloudapi.sms.v20210111.SmsClient.SendSms(SmsClient.java:382)
+	at io.github.zh.auth.utils.sms.SendSmsUtil.sendSms(SendSmsUtil.java:118)
+	at io.github.zh.auth.service.impl.SMSServiceImpl.sendSms(SMSServiceImpl.java:25)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:351)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:113)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[flash-chat-web-auth,dev] 2026-06-28 11:25:33.212 ERROR 29296 --- [         task-1] i.g.z.a.s.i.SMSServiceImpl               : 短信发送失败，手机号：18888888888，验证码：325177
+
+com.tencentcloudapi.common.exception.TencentCloudSDKException: The SecretId is not found, please ensure that your SecretId is correct.
+	at com.tencentcloudapi.common.AbstractClient.internalRequest(AbstractClient.java:386)
+	at com.tencentcloudapi.sms.v20210111.SmsClient.SendSms(SmsClient.java:382)
+	at io.github.zh.auth.utils.sms.SendSmsUtil.sendSms(SendSmsUtil.java:118)
+	at io.github.zh.auth.service.impl.SMSServiceImpl.sendSms(SMSServiceImpl.java:25)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:351)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:113)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[flash-chat-web-auth,dev] 2026-06-28 11:28:07.097 ERROR 29128 --- [         task-1] i.g.z.a.s.i.SMSServiceImpl               : 短信发送失败，手机号：18888888888，验证码：162803
+
+com.tencentcloudapi.common.exception.TencentCloudSDKException: The SecretId is not found, please ensure that your SecretId is correct.
+	at com.tencentcloudapi.common.AbstractClient.internalRequest(AbstractClient.java:386)
+	at com.tencentcloudapi.sms.v20210111.SmsClient.SendSms(SmsClient.java:382)
+	at io.github.zh.auth.utils.sms.SendSmsUtil.sendSms(SendSmsUtil.java:118)
+	at io.github.zh.auth.service.impl.SMSServiceImpl.sendSms(SMSServiceImpl.java:25)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:351)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:113)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[flash-chat-web-auth,dev] 2026-06-28 11:34:53.496 ERROR 25040 --- [         task-1] i.g.z.a.s.i.SMSServiceImpl               : 短信发送失败，手机号：18888888888，验证码：772992
+
+com.tencentcloudapi.common.exception.TencentCloudSDKException: The SecretId is not found, please ensure that your SecretId is correct.
+	at com.tencentcloudapi.common.AbstractClient.internalRequest(AbstractClient.java:386)
+	at com.tencentcloudapi.sms.v20210111.SmsClient.SendSms(SmsClient.java:382)
+	at io.github.zh.auth.utils.sms.SendSmsUtil.sendSms(SendSmsUtil.java:118)
+	at io.github.zh.auth.service.impl.SMSServiceImpl.sendSms(SMSServiceImpl.java:25)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:351)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:113)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[flash-chat-web-auth,dev] 2026-06-28 12:18:35.013 ERROR 32308 --- [         task-1] i.g.z.a.s.i.SMSServiceImpl               : 短信发送失败，手机号：18888888888，验证码：612600
+
+com.tencentcloudapi.common.exception.TencentCloudSDKException: The SecretId is not found, please ensure that your SecretId is correct.
+	at com.tencentcloudapi.common.AbstractClient.internalRequest(AbstractClient.java:386)
+	at com.tencentcloudapi.sms.v20210111.SmsClient.SendSms(SmsClient.java:382)
+	at io.github.zh.auth.utils.sms.SendSmsUtil.sendSms(SendSmsUtil.java:118)
+	at io.github.zh.auth.service.impl.SMSServiceImpl.sendSms(SMSServiceImpl.java:25)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:351)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:113)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[flash-chat-web-auth,dev] 2026-06-28 13:54:27.868 ERROR 35588 --- [         task-1] i.g.z.a.s.i.SMSServiceImpl               : 短信发送失败，手机号：18888888888，验证码：777382
+
+com.tencentcloudapi.common.exception.TencentCloudSDKException: The SecretId is not found, please ensure that your SecretId is correct.
+	at com.tencentcloudapi.common.AbstractClient.internalRequest(AbstractClient.java:386)
+	at com.tencentcloudapi.sms.v20210111.SmsClient.SendSms(SmsClient.java:382)
+	at io.github.zh.auth.utils.sms.SendSmsUtil.sendSms(SendSmsUtil.java:118)
+	at io.github.zh.auth.service.impl.SMSServiceImpl.sendSms(SMSServiceImpl.java:25)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:351)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:113)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[flash-chat-web-auth,dev] 2026-06-28 13:59:17.163 ERROR 18532 --- [         task-1] i.g.z.a.s.i.SMSServiceImpl               : 短信发送失败，手机号：18888888888，验证码：621743
+
+com.tencentcloudapi.common.exception.TencentCloudSDKException: The SecretId is not found, please ensure that your SecretId is correct.
+	at com.tencentcloudapi.common.AbstractClient.internalRequest(AbstractClient.java:386)
+	at com.tencentcloudapi.sms.v20210111.SmsClient.SendSms(SmsClient.java:382)
+	at io.github.zh.auth.utils.sms.SendSmsUtil.sendSms(SendSmsUtil.java:118)
+	at io.github.zh.auth.service.impl.SMSServiceImpl.sendSms(SMSServiceImpl.java:25)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:351)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:113)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[flash-chat-web-auth,dev] 2026-06-28 14:10:49.827 ERROR 36392 --- [         task-1] i.g.z.a.s.i.SMSServiceImpl               : 短信发送失败，手机号：18888888888，验证码：767670
+
+com.tencentcloudapi.common.exception.TencentCloudSDKException: The SecretId is not found, please ensure that your SecretId is correct.
+	at com.tencentcloudapi.common.AbstractClient.internalRequest(AbstractClient.java:386)
+	at com.tencentcloudapi.sms.v20210111.SmsClient.SendSms(SmsClient.java:382)
+	at io.github.zh.auth.utils.sms.SendSmsUtil.sendSms(SendSmsUtil.java:118)
+	at io.github.zh.auth.service.impl.SMSServiceImpl.sendSms(SMSServiceImpl.java:25)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:351)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:113)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[flash-chat-web-auth,dev] 2026-06-28 14:16:29.934 ERROR 36392 --- [         task-2] i.g.z.a.s.i.SMSServiceImpl               : 短信发送失败，手机号：18888888888，验证码：955531
+
+com.tencentcloudapi.common.exception.TencentCloudSDKException: The SecretId is not found, please ensure that your SecretId is correct.
+	at com.tencentcloudapi.common.AbstractClient.internalRequest(AbstractClient.java:386)
+	at com.tencentcloudapi.sms.v20210111.SmsClient.SendSms(SmsClient.java:382)
+	at io.github.zh.auth.utils.sms.SendSmsUtil.sendSms(SendSmsUtil.java:118)
+	at io.github.zh.auth.service.impl.SMSServiceImpl.sendSms(SMSServiceImpl.java:25)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:351)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:113)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[flash-chat-web-auth,dev] 2026-06-28 14:19:02.027 ERROR 21552 --- [         task-1] i.g.z.a.s.i.SMSServiceImpl               : 短信发送失败，手机号：18888888888，验证码：392883
+
+com.tencentcloudapi.common.exception.TencentCloudSDKException: The SecretId is not found, please ensure that your SecretId is correct.
+	at com.tencentcloudapi.common.AbstractClient.internalRequest(AbstractClient.java:386)
+	at com.tencentcloudapi.sms.v20210111.SmsClient.SendSms(SmsClient.java:382)
+	at io.github.zh.auth.utils.sms.SendSmsUtil.sendSms(SendSmsUtil.java:118)
+	at io.github.zh.auth.service.impl.SMSServiceImpl.sendSms(SMSServiceImpl.java:25)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:351)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:113)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[flash-chat-web-auth,dev] 2026-06-28 14:55:07.086 ERROR 10376 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8890 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8890 or configure this application to listen on another port.
+

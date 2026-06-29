@@ -1,0 +1,14 @@
+# 构建产物
+dist/
+unpackage/
+
+# IDE
+.idea/
+.vscode/
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 日志
+*.log

@@ -1,0 +1,26 @@
+server:
+  port: 9991
+
+spring:
+
+#  config:
+#    import:
+#      - nacos:127.0.0.1:8848
+#  cloud:
+#    nacos:
+#      config:
+#        server-addr: 127.0.0.1:8848
+
+file:
+  strategy: minio
+
+minio:
+  endpoint: http://localhost:9002
+  access-key: minioadmin
+  secret-key: minioadmin
+  bucket: flash-chat
+
+logging:
+  level:
+    root: WARN
+  config: classpath:logback-config.xml

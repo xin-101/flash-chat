@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: flash-chat-web-auth
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+
+# 腾讯短信发送
+tencent:
+  cloud:
+    secretId: ${TENCENT_CLOUD_SECRET_ID}
+    secretKey: ${TENCENT_CLOUD_SECRET_KEY}
+    signName:
+    smsSdkAppId: ${TENCENT_CLOUD_SMS_SDK_APP_ID}
+    templateId:
+
+
+# mybatis- plus
+mybatis-plus:
+    mapper-locations: classpath*:mappers/**/*.xml

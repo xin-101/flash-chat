@@ -1,0 +1,146 @@
+[flash-chat-web-auth,dev] 2026-06-28 09:05:47.917  WARN 8612 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-auth] & group[DEFAULT_GROUP]
+[flash-chat-web-auth,dev] 2026-06-28 09:05:48.073  WARN 8612 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-auth.yaml] & group[DEFAULT_GROUP]
+[flash-chat-web-auth,dev] 2026-06-28 09:27:29.536  WARN 8612 --- [nio-8890-exec-4] i.g.z.a.e.GlobalExceptionHandler         : /auth/login request fail,errorCode:auth-10004,errorMessage:验证码错误
+[flash-chat-web-auth,dev] 2026-06-28 09:27:55.272  WARN 8612 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Start destroying Publisher
+[flash-chat-web-auth,dev] 2026-06-28 09:27:55.272  WARN 8612 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Start destroying common HttpClient
+[flash-chat-web-auth,dev] 2026-06-28 09:27:55.272  WARN 8612 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 09:27:55.273  WARN 8612 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 09:27:55.404  WARN 8612 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Start destroying NacosRestTemplate
+[flash-chat-web-auth,dev] 2026-06-28 09:27:55.404  WARN 8612 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 09:27:55.404  WARN 8612 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Start destroying NacosRestTemplate
+[flash-chat-web-auth,dev] 2026-06-28 09:27:55.404  WARN 8612 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 09:27:57.982  WARN 29672 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-auth] & group[DEFAULT_GROUP]
+[flash-chat-web-auth,dev] 2026-06-28 09:27:57.990  WARN 29672 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-auth.yaml] & group[DEFAULT_GROUP]
+[flash-chat-web-auth,dev] 2026-06-28 09:28:49.207  WARN 29672 --- [nio-8890-exec-1] i.g.z.a.e.GlobalExceptionHandler         : /auth/login request fail,errorCode:auth-10004,errorMessage:验证码错误
+[flash-chat-web-auth,dev] 2026-06-28 09:32:08.366  WARN 29672 --- [nio-8890-exec-5] i.g.z.a.e.GlobalExceptionHandler         : /auth/sendSms request fail,errorCode:auth-10003,errorMessage:短信发送频繁
+[flash-chat-web-auth,dev] 2026-06-28 10:06:12.000  WARN 29672 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Start destroying Publisher
+[flash-chat-web-auth,dev] 2026-06-28 10:06:12.000  WARN 29672 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 10:06:12.000  WARN 29672 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Start destroying common HttpClient
+[flash-chat-web-auth,dev] 2026-06-28 10:06:12.001  WARN 29672 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 10:06:12.144  WARN 29672 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Start destroying NacosRestTemplate
+[flash-chat-web-auth,dev] 2026-06-28 10:06:12.144  WARN 29672 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 10:06:12.144  WARN 29672 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Start destroying NacosRestTemplate
+[flash-chat-web-auth,dev] 2026-06-28 10:06:12.144  WARN 29672 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 10:06:59.151  WARN 1800 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-auth] & group[DEFAULT_GROUP]
+[flash-chat-web-auth,dev] 2026-06-28 10:06:59.160  WARN 1800 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-auth.yaml] & group[DEFAULT_GROUP]
+[flash-chat-web-auth,dev] 2026-06-28 10:11:16.155  WARN 1800 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Start destroying common HttpClient
+[flash-chat-web-auth,dev] 2026-06-28 10:11:16.154  WARN 1800 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Start destroying Publisher
+[flash-chat-web-auth,dev] 2026-06-28 10:11:16.155  WARN 1800 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 10:11:16.155  WARN 1800 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 10:11:16.290  WARN 1800 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Start destroying NacosRestTemplate
+[flash-chat-web-auth,dev] 2026-06-28 10:11:16.290  WARN 1800 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 10:11:16.290  WARN 1800 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Start destroying NacosRestTemplate
+[flash-chat-web-auth,dev] 2026-06-28 10:11:16.290  WARN 1800 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 11:19:16.035  WARN 27212 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-auth] & group[DEFAULT_GROUP]
+[flash-chat-web-auth,dev] 2026-06-28 11:19:16.043  WARN 27212 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-auth.yaml] & group[DEFAULT_GROUP]
+[flash-chat-web-auth,dev] 2026-06-28 11:21:40.486  WARN 27212 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Start destroying Publisher
+[flash-chat-web-auth,dev] 2026-06-28 11:21:40.486  WARN 27212 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Start destroying common HttpClient
+[flash-chat-web-auth,dev] 2026-06-28 11:21:40.486  WARN 27212 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 11:21:40.488  WARN 27212 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 11:21:40.621  WARN 27212 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Start destroying NacosRestTemplate
+[flash-chat-web-auth,dev] 2026-06-28 11:21:40.621  WARN 27212 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 11:21:40.621  WARN 27212 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Start destroying NacosRestTemplate
+[flash-chat-web-auth,dev] 2026-06-28 11:21:40.621  WARN 27212 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 11:21:46.753  WARN 6708 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-auth] & group[DEFAULT_GROUP]
+[flash-chat-web-auth,dev] 2026-06-28 11:21:46.759  WARN 6708 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-auth.yaml] & group[DEFAULT_GROUP]
+[flash-chat-web-auth,dev] 2026-06-28 11:22:10.160  WARN 6708 --- [nio-8890-exec-1] i.g.z.a.e.GlobalExceptionHandler         : /auth/sendSms request fail,errorCode:auth-10003,errorMessage:短信发送频繁
+[flash-chat-web-auth,dev] 2026-06-28 11:22:33.025  WARN 6708 --- [nio-8890-exec-4] i.g.z.a.e.GlobalExceptionHandler         : /auth/sendSms request fail,errorCode:auth-10003,errorMessage:短信发送频繁
+[flash-chat-web-auth,dev] 2026-06-28 11:24:42.315  WARN 6708 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Start destroying Publisher
+[flash-chat-web-auth,dev] 2026-06-28 11:24:42.315  WARN 6708 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Start destroying common HttpClient
+[flash-chat-web-auth,dev] 2026-06-28 11:24:42.315  WARN 6708 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 11:24:42.315  WARN 6708 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 11:24:42.442  WARN 6708 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Start destroying NacosRestTemplate
+[flash-chat-web-auth,dev] 2026-06-28 11:24:42.442  WARN 6708 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 11:24:42.442  WARN 6708 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Start destroying NacosRestTemplate
+[flash-chat-web-auth,dev] 2026-06-28 11:24:42.442  WARN 6708 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 11:24:46.999  WARN 29296 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-auth] & group[DEFAULT_GROUP]
+[flash-chat-web-auth,dev] 2026-06-28 11:24:47.011  WARN 29296 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-auth.yaml] & group[DEFAULT_GROUP]
+[flash-chat-web-auth,dev] 2026-06-28 11:25:04.213  WARN 29296 --- [nio-8890-exec-2] i.g.z.a.e.GlobalExceptionHandler         : /auth/sendSms request fail,errorCode:auth-10003,errorMessage:短信发送频繁
+[flash-chat-web-auth,dev] 2026-06-28 11:26:27.627  WARN 29296 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Start destroying Publisher
+[flash-chat-web-auth,dev] 2026-06-28 11:26:27.627  WARN 29296 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Start destroying common HttpClient
+[flash-chat-web-auth,dev] 2026-06-28 11:26:27.628  WARN 29296 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 11:26:27.628  WARN 29296 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 11:26:27.756  WARN 29296 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Start destroying NacosRestTemplate
+[flash-chat-web-auth,dev] 2026-06-28 11:26:27.756  WARN 29296 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 11:26:27.757  WARN 29296 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Start destroying NacosRestTemplate
+[flash-chat-web-auth,dev] 2026-06-28 11:26:27.757  WARN 29296 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 11:26:33.668  WARN 28468 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-auth] & group[DEFAULT_GROUP]
+[flash-chat-web-auth,dev] 2026-06-28 11:26:33.673  WARN 28468 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-auth.yaml] & group[DEFAULT_GROUP]
+[flash-chat-web-auth,dev] 2026-06-28 11:27:03.735  WARN 28468 --- [         task-1] i.g.z.a.s.i.SMSServiceImpl               : 短信配置不完整（secretId/secretKey/signName 为空），跳过实际发送，验证码：241399 有效期5分钟
+[flash-chat-web-auth,dev] 2026-06-28 11:27:48.313  WARN 28468 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Start destroying Publisher
+[flash-chat-web-auth,dev] 2026-06-28 11:27:48.313  WARN 28468 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Start destroying common HttpClient
+[flash-chat-web-auth,dev] 2026-06-28 11:27:48.313  WARN 28468 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 11:27:48.314  WARN 28468 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 11:27:48.442  WARN 28468 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Start destroying NacosRestTemplate
+[flash-chat-web-auth,dev] 2026-06-28 11:27:48.442  WARN 28468 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 11:27:48.443  WARN 28468 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Start destroying NacosRestTemplate
+[flash-chat-web-auth,dev] 2026-06-28 11:27:48.443  WARN 28468 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 11:27:54.129  WARN 29128 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-auth] & group[DEFAULT_GROUP]
+[flash-chat-web-auth,dev] 2026-06-28 11:27:54.139  WARN 29128 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-auth.yaml] & group[DEFAULT_GROUP]
+[flash-chat-web-auth,dev] 2026-06-28 11:33:44.309  WARN 29128 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Start destroying common HttpClient
+[flash-chat-web-auth,dev] 2026-06-28 11:33:44.309  WARN 29128 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 11:33:44.308  WARN 29128 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Start destroying Publisher
+[flash-chat-web-auth,dev] 2026-06-28 11:33:44.309  WARN 29128 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 11:33:44.436  WARN 29128 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Start destroying NacosRestTemplate
+[flash-chat-web-auth,dev] 2026-06-28 11:33:44.436  WARN 29128 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 11:33:44.436  WARN 29128 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Start destroying NacosRestTemplate
+[flash-chat-web-auth,dev] 2026-06-28 11:33:44.436  WARN 29128 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 11:33:49.022  WARN 25040 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-auth] & group[DEFAULT_GROUP]
+[flash-chat-web-auth,dev] 2026-06-28 11:33:49.030  WARN 25040 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-auth.yaml] & group[DEFAULT_GROUP]
+[flash-chat-web-auth,dev] 2026-06-28 11:39:10.047  WARN 25040 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Start destroying Publisher
+[flash-chat-web-auth,dev] 2026-06-28 11:39:10.047  WARN 25040 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Start destroying common HttpClient
+[flash-chat-web-auth,dev] 2026-06-28 11:39:10.047  WARN 25040 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 11:39:10.047  WARN 25040 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 11:39:10.182  WARN 25040 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Start destroying NacosRestTemplate
+[flash-chat-web-auth,dev] 2026-06-28 11:39:10.182  WARN 25040 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 11:39:10.183  WARN 25040 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Start destroying NacosRestTemplate
+[flash-chat-web-auth,dev] 2026-06-28 11:39:10.183  WARN 25040 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 12:18:06.369  WARN 32308 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-auth] & group[DEFAULT_GROUP]
+[flash-chat-web-auth,dev] 2026-06-28 12:18:06.381  WARN 32308 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-auth.yaml] & group[DEFAULT_GROUP]
+[flash-chat-web-auth,dev] 2026-06-28 12:38:39.300  WARN 32308 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Start destroying common HttpClient
+[flash-chat-web-auth,dev] 2026-06-28 12:38:39.300  WARN 32308 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Start destroying Publisher
+[flash-chat-web-auth,dev] 2026-06-28 12:38:39.301  WARN 32308 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 12:38:39.301  WARN 32308 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 12:38:39.441  WARN 32308 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Start destroying NacosRestTemplate
+[flash-chat-web-auth,dev] 2026-06-28 12:38:39.441  WARN 32308 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 12:38:39.441  WARN 32308 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Start destroying NacosRestTemplate
+[flash-chat-web-auth,dev] 2026-06-28 12:38:39.441  WARN 32308 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 13:53:43.960  WARN 35588 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-auth] & group[DEFAULT_GROUP]
+[flash-chat-web-auth,dev] 2026-06-28 13:53:43.968  WARN 35588 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-auth.yaml] & group[DEFAULT_GROUP]
+[flash-chat-web-auth,dev] 2026-06-28 13:58:06.369  WARN 35588 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Start destroying Publisher
+[flash-chat-web-auth,dev] 2026-06-28 13:58:06.369  WARN 35588 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Start destroying common HttpClient
+[flash-chat-web-auth,dev] 2026-06-28 13:58:06.369  WARN 35588 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 13:58:06.369  WARN 35588 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 13:58:06.500  WARN 35588 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Start destroying NacosRestTemplate
+[flash-chat-web-auth,dev] 2026-06-28 13:58:06.500  WARN 35588 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 13:58:06.501  WARN 35588 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Start destroying NacosRestTemplate
+[flash-chat-web-auth,dev] 2026-06-28 13:58:06.501  WARN 35588 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 13:58:13.501  WARN 18532 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-auth] & group[DEFAULT_GROUP]
+[flash-chat-web-auth,dev] 2026-06-28 13:58:13.506  WARN 18532 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-auth.yaml] & group[DEFAULT_GROUP]
+[flash-chat-web-auth,dev] 2026-06-28 13:58:49.488  WARN 18532 --- [nio-8890-exec-1] i.g.z.a.e.GlobalExceptionHandler         : /auth/sendSms request fail,errorCode:auth-10003,errorMessage:短信发送频繁
+[flash-chat-web-auth,dev] 2026-06-28 14:10:12.723  WARN 36392 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-auth] & group[DEFAULT_GROUP]
+[flash-chat-web-auth,dev] 2026-06-28 14:10:12.729  WARN 36392 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-auth.yaml] & group[DEFAULT_GROUP]
+[flash-chat-web-auth,dev] 2026-06-28 14:18:11.568  WARN 36392 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Start destroying common HttpClient
+[flash-chat-web-auth,dev] 2026-06-28 14:18:11.568  WARN 36392 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Start destroying Publisher
+[flash-chat-web-auth,dev] 2026-06-28 14:18:11.570  WARN 36392 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 14:18:11.570  WARN 36392 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 14:18:11.704  WARN 36392 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Start destroying NacosRestTemplate
+[flash-chat-web-auth,dev] 2026-06-28 14:18:11.704  WARN 36392 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 14:18:11.704  WARN 36392 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Start destroying NacosRestTemplate
+[flash-chat-web-auth,dev] 2026-06-28 14:18:11.704  WARN 36392 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 14:18:16.814  WARN 21552 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-auth] & group[DEFAULT_GROUP]
+[flash-chat-web-auth,dev] 2026-06-28 14:18:16.821  WARN 21552 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-auth.yaml] & group[DEFAULT_GROUP]
+[flash-chat-web-auth,dev] 2026-06-28 14:18:43.593  WARN 21552 --- [nio-8890-exec-1] i.g.z.a.e.GlobalExceptionHandler         : /auth/sendSms request fail,errorCode:auth-10003,errorMessage:短信发送频繁
+[flash-chat-web-auth,dev] 2026-06-28 14:26:52.425  WARN 21552 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Start destroying Publisher
+[flash-chat-web-auth,dev] 2026-06-28 14:26:52.425  WARN 21552 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Start destroying common HttpClient
+[flash-chat-web-auth,dev] 2026-06-28 14:26:52.425  WARN 21552 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 14:26:52.426  WARN 21552 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 14:26:52.557  WARN 21552 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Start destroying NacosRestTemplate
+[flash-chat-web-auth,dev] 2026-06-28 14:26:52.557  WARN 21552 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 14:26:52.557  WARN 21552 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Start destroying NacosRestTemplate
+[flash-chat-web-auth,dev] 2026-06-28 14:26:52.557  WARN 21552 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 14:55:03.480  WARN 10376 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-auth] & group[DEFAULT_GROUP]
+[flash-chat-web-auth,dev] 2026-06-28 14:55:03.486  WARN 10376 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-auth.yaml] & group[DEFAULT_GROUP]
+[flash-chat-web-auth,dev] 2026-06-28 14:55:07.044  WARN 10376 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+[flash-chat-web-auth,dev] 2026-06-28 14:55:08.051  WARN 10376 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Start destroying Publisher
+[flash-chat-web-auth,dev] 2026-06-28 14:55:08.051  WARN 10376 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Start destroying common HttpClient

@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="io.github.zh.auth.mapper.UsersMapper">
+  <resultMap id="BaseResultMap" type="io.github.zh.model.auth.pojo.Users">
+    <!--@mbg.generated-->
+    <!--@Table flash_chat.users-->
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="flash_chat_num" jdbcType="VARCHAR" property="flashChatNum" />
+    <result column="flash_chat_num_img" jdbcType="VARCHAR" property="flashChatNumImg" />
+    <result column="mobile" jdbcType="VARCHAR" property="mobile" />
+    <result column="nickname" jdbcType="VARCHAR" property="nickname" />
+    <result column="real_name" jdbcType="VARCHAR" property="realName" />
+    <result column="sex" jdbcType="INTEGER" property="sex" />
+    <result column="face" jdbcType="VARCHAR" property="face" />
+    <result column="email" jdbcType="VARCHAR" property="email" />
+    <result column="birthday" jdbcType="DATE" property="birthday" />
+    <result column="country" jdbcType="VARCHAR" property="country" />
+    <result column="province" jdbcType="VARCHAR" property="province" />
+    <result column="city" jdbcType="VARCHAR" property="city" />
+    <result column="district" jdbcType="VARCHAR" property="district" />
+    <result column="chat_bg" jdbcType="VARCHAR" property="chatBg" />
+    <result column="friend_circle_bg" jdbcType="VARCHAR" property="friendCircleBg" />
+    <result column="signature" jdbcType="VARCHAR" property="signature" />
+    <result column="created_time" jdbcType="TIMESTAMP" property="createdTime" />
+    <result column="updated_time" jdbcType="TIMESTAMP" property="updatedTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, flash_chat_num, flash_chat_num_img, mobile, nickname, real_name, sex, face, email, 
+    birthday, country, province, city, district, chat_bg, friend_circle_bg, signature, 
+    created_time, updated_time
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    <!--@mbg.generated-->
+    select 
+    <include refid="Base_Column_List" />
+    from flash_chat.users
+    where id = #{id,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    <!--@mbg.generated-->
+    delete from flash_chat.users
+    where id = #{id,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="io.github.zh.model.auth.pojo.Users">
+    <!--@mbg.generated-->
+    insert into flash_chat.users (id, flash_chat_num, flash_chat_num_img, 
+      mobile, nickname, real_name, 
+      sex, face, email, birthday, 
+      country, province, city, 
+      district, chat_bg, friend_circle_bg, 
+      signature, created_time, updated_time
+      )
+    values (#{id,jdbcType=VARCHAR}, #{flashChatNum,jdbcType=VARCHAR}, #{flashChatNumImg,jdbcType=VARCHAR}, 
+      #{mobile,jdbcType=VARCHAR}, #{nickname,jdbcType=VARCHAR}, #{realName,jdbcType=VARCHAR}, 
+      #{sex,jdbcType=INTEGER}, #{face,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR}, #{birthday,jdbcType=DATE}, 
+      #{country,jdbcType=VARCHAR}, #{province,jdbcType=VARCHAR}, #{city,jdbcType=VARCHAR}, 
+      #{district,jdbcType=VARCHAR}, #{chatBg,jdbcType=VARCHAR}, #{friendCircleBg,jdbcType=VARCHAR}, 
+      #{signature,jdbcType=VARCHAR}, #{createdTime,jdbcType=TIMESTAMP}, #{updatedTime,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="io.github.zh.model.auth.pojo.Users">
+    <!--@mbg.generated-->
+    insert into flash_chat.users
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="flashChatNum != null">
+        flash_chat_num,
+      </if>
+      <if test="flashChatNumImg != null">
+        flash_chat_num_img,
+      </if>
+      <if test="mobile != null">
+        mobile,
+      </if>
+      <if test="nickname != null">
+        nickname,
+      </if>
+      <if test="realName != null">
+        real_name,
+      </if>
+      <if test="sex != null">
+        sex,
+      </if>
+      <if test="face != null">
+        face,
+      </if>
+      <if test="email != null">
+        email,
+      </if>
+      <if test="birthday != null">
+        birthday,
+      </if>
+      <if test="country != null">
+        country,
+      </if>
+      <if test="province != null">
+        province,
+      </if>
+      <if test="city != null">
+        city,
+      </if>
+      <if test="district != null">
+        district,
+      </if>
+      <if test="chatBg != null">
+        chat_bg,
+      </if>
+      <if test="friendCircleBg != null">
+        friend_circle_bg,
+      </if>
+      <if test="signature != null">
+        signature,
+      </if>
+      <if test="createdTime != null">
+        created_time,
+      </if>
+      <if test="updatedTime != null">
+        updated_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=VARCHAR},
+      </if>
+      <if test="flashChatNum != null">
+        #{flashChatNum,jdbcType=VARCHAR},
+      </if>
+      <if test="flashChatNumImg != null">
+        #{flashChatNumImg,jdbcType=VARCHAR},
+      </if>
+      <if test="mobile != null">
+        #{mobile,jdbcType=VARCHAR},
+      </if>
+      <if test="nickname != null">
+        #{nickname,jdbcType=VARCHAR},
+      </if>
+      <if test="realName != null">
+        #{realName,jdbcType=VARCHAR},
+      </if>
+      <if test="sex != null">
+        #{sex,jdbcType=INTEGER},
+      </if>
+      <if test="face != null">
+        #{face,jdbcType=VARCHAR},
+      </if>
+      <if test="email != null">
+        #{email,jdbcType=VARCHAR},
+      </if>
+      <if test="birthday != null">
+        #{birthday,jdbcType=DATE},
+      </if>
+      <if test="country != null">
+        #{country,jdbcType=VARCHAR},
+      </if>
+      <if test="province != null">
+        #{province,jdbcType=VARCHAR},
+      </if>
+      <if test="city != null">
+        #{city,jdbcType=VARCHAR},
+      </if>
+      <if test="district != null">
+        #{district,jdbcType=VARCHAR},
+      </if>
+      <if test="chatBg != null">
+        #{chatBg,jdbcType=VARCHAR},
+      </if>
+      <if test="friendCircleBg != null">
+        #{friendCircleBg,jdbcType=VARCHAR},
+      </if>
+      <if test="signature != null">
+        #{signature,jdbcType=VARCHAR},
+      </if>
+      <if test="createdTime != null">
+        #{createdTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updatedTime != null">
+        #{updatedTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="io.github.zh.model.auth.pojo.Users">
+    <!--@mbg.generated-->
+    update flash_chat.users
+    <set>
+      <if test="flashChatNum != null">
+        flash_chat_num = #{flashChatNum,jdbcType=VARCHAR},
+      </if>
+      <if test="flashChatNumImg != null">
+        flash_chat_num_img = #{flashChatNumImg,jdbcType=VARCHAR},
+      </if>
+      <if test="mobile != null">
+        mobile = #{mobile,jdbcType=VARCHAR},
+      </if>
+      <if test="nickname != null">
+        nickname = #{nickname,jdbcType=VARCHAR},
+      </if>
+      <if test="realName != null">
+        real_name = #{realName,jdbcType=VARCHAR},
+      </if>
+      <if test="sex != null">
+        sex = #{sex,jdbcType=INTEGER},
+      </if>
+      <if test="face != null">
+        face = #{face,jdbcType=VARCHAR},
+      </if>
+      <if test="email != null">
+        email = #{email,jdbcType=VARCHAR},
+      </if>
+      <if test="birthday != null">
+        birthday = #{birthday,jdbcType=DATE},
+      </if>
+      <if test="country != null">
+        country = #{country,jdbcType=VARCHAR},
+      </if>
+      <if test="province != null">
+        province = #{province,jdbcType=VARCHAR},
+      </if>
+      <if test="city != null">
+        city = #{city,jdbcType=VARCHAR},
+      </if>
+      <if test="district != null">
+        district = #{district,jdbcType=VARCHAR},
+      </if>
+      <if test="chatBg != null">
+        chat_bg = #{chatBg,jdbcType=VARCHAR},
+      </if>
+      <if test="friendCircleBg != null">
+        friend_circle_bg = #{friendCircleBg,jdbcType=VARCHAR},
+      </if>
+      <if test="signature != null">
+        signature = #{signature,jdbcType=VARCHAR},
+      </if>
+      <if test="createdTime != null">
+        created_time = #{createdTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updatedTime != null">
+        updated_time = #{updatedTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="io.github.zh.model.auth.pojo.Users">
+    <!--@mbg.generated-->
+    update flash_chat.users
+    set flash_chat_num = #{flashChatNum,jdbcType=VARCHAR},
+      flash_chat_num_img = #{flashChatNumImg,jdbcType=VARCHAR},
+      mobile = #{mobile,jdbcType=VARCHAR},
+      nickname = #{nickname,jdbcType=VARCHAR},
+      real_name = #{realName,jdbcType=VARCHAR},
+      sex = #{sex,jdbcType=INTEGER},
+      face = #{face,jdbcType=VARCHAR},
+      email = #{email,jdbcType=VARCHAR},
+      birthday = #{birthday,jdbcType=DATE},
+      country = #{country,jdbcType=VARCHAR},
+      province = #{province,jdbcType=VARCHAR},
+      city = #{city,jdbcType=VARCHAR},
+      district = #{district,jdbcType=VARCHAR},
+      chat_bg = #{chatBg,jdbcType=VARCHAR},
+      friend_circle_bg = #{friendCircleBg,jdbcType=VARCHAR},
+      signature = #{signature,jdbcType=VARCHAR},
+      created_time = #{createdTime,jdbcType=TIMESTAMP},
+      updated_time = #{updatedTime,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=VARCHAR}
+  </update>
+
+  <select id="selectByPhone" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from flash_chat.users
+    where mobile = #{phone}
+    </select>
+
+  <select id="selectById" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from flash_chat.users
+    where id = #{otherUserId}
+  </select>
+
+  <select id="selectByIds" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from flash_chat.users
+    where id in
+    <foreach item="id" collection="ids" open="(" separator="," close=")">
+      #{id}
+    </foreach>
+  </select>
+
+  <select id="selectByFlashChatNum" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from flash_chat.users
+    where flash_chat_num = #{flashChatNum}
+  </select>
+
+  <select id="searchByKeyword" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from flash_chat.users
+    where nickname like concat('%', #{keyword}, '%')
+       or mobile like concat('%', #{keyword}, '%')
+    limit 20
+  </select>
+</mapper>

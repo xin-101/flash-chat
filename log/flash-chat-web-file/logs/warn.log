@@ -1,0 +1,15 @@
+[flash-chat-web-file,dev] 2026-06-27 16:32:14.218  WARN 27972 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-file] & group[DEFAULT_GROUP]
+[flash-chat-web-file,dev] 2026-06-27 16:32:14.227  WARN 27972 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-file.properties] & group[DEFAULT_GROUP]
+[flash-chat-web-file,dev] 2026-06-27 16:32:14.232  WARN 27972 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-file-dev.properties] & group[DEFAULT_GROUP]
+[flash-chat-web-file,dev] 2026-06-27 16:39:17.816  WARN 27972 --- [       Thread-2] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Start destroying common HttpClient
+[flash-chat-web-file,dev] 2026-06-27 16:39:17.816  WARN 27972 --- [       Thread-6] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Start destroying Publisher
+[flash-chat-web-file,dev] 2026-06-27 16:39:17.817  WARN 27972 --- [       Thread-6] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Destruction of the end
+[flash-chat-web-file,dev] 2026-06-27 16:39:17.817  WARN 27972 --- [       Thread-2] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Destruction of the end
+[flash-chat-web-file,dev] 2026-06-27 16:39:17.846  WARN 27972 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Start destroying NacosRestTemplate
+[flash-chat-web-file,dev] 2026-06-27 16:39:17.846  WARN 27972 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Destruction of the end
+[flash-chat-web-file,dev] 2026-06-27 16:39:17.846  WARN 27972 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Start destroying NacosRestTemplate
+[flash-chat-web-file,dev] 2026-06-27 16:39:17.846  WARN 27972 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Destruction of the end
+[flash-chat-web-file,dev] 2026-06-27 16:46:07.872  WARN 22944 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-file] & group[DEFAULT_GROUP]
+[flash-chat-web-file,dev] 2026-06-27 16:46:07.878  WARN 22944 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-file.yaml] & group[DEFAULT_GROUP]
+[flash-chat-web-file,dev] 2026-06-27 17:07:36.744  WARN 22944 --- [listener.task-0] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[null.yaml] & group[DEFAULT_GROUP]
+[flash-chat-web-file,dev] 2026-06-27 17:07:36.748  WARN 22944 --- [listener.task-0] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[null-dev.yaml] & group[DEFAULT_GROUP]

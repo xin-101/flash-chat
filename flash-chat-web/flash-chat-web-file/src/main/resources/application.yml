@@ -1,0 +1,26 @@
+
+
+server:
+  port: 8891
+
+spring:
+  application:
+    name: flash-chat-web-file
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 20MB
+
+file:
+  upload-dir: ./upload
+  access-prefix: /files
+  strategy: local
+  max-size: 10485760
+
+

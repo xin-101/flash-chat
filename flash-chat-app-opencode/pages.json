@@ -1,0 +1,111 @@
+{
+  "pages": [
+    {
+      "path": "pages/login/index",
+      "style": {
+        "navigationBarTitleText": "登录",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "Flash Chat",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/chat/detail",
+      "style": {
+        "navigationBarTitleText": "聊天",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/user/search",
+      "style": {
+        "navigationBarTitleText": "搜索用户"
+      }
+    },
+    {
+      "path": "pages/my/index",
+      "style": {
+        "navigationBarTitleText": "我的",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/my/edit",
+      "style": {
+        "navigationBarTitleText": "编辑资料",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/friend/index",
+      "style": {
+        "navigationBarTitleText": "通讯录",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/moment/list",
+      "style": {
+        "navigationBarTitleText": "朋友圈",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/moment/create",
+      "style": {
+        "navigationBarTitleText": "发表动态"
+      }
+    },
+    {
+      "path": "pages/group/create",
+      "style": {
+        "navigationBarTitleText": "创建群聊",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/group/manage",
+      "style": {
+        "navigationBarTitleText": "群管理",
+        "navigationStyle": "custom"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "Flash Chat",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "backgroundColor": "#F5F5F5"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#007AFF",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/tab-chat.png",
+        "selectedIconPath": "static/tab-chat-active.png",
+        "text": "会话"
+      },
+      {
+        "pagePath": "pages/friend/index",
+        "iconPath": "static/tab-chat.png",
+        "selectedIconPath": "static/tab-chat-active.png",
+        "text": "通讯录"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "iconPath": "static/tab-my.png",
+        "selectedIconPath": "static/tab-my-active.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

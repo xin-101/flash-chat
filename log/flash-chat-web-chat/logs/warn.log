@@ -1,0 +1,134 @@
+[flash-chat-web-chat,dev] 2026-06-28 09:05:50.188  WARN 3368 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-chat] & group[DEFAULT_GROUP]
+[flash-chat-web-chat,dev] 2026-06-28 09:05:50.200  WARN 3368 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-chat.yaml] & group[DEFAULT_GROUP]
+[flash-chat-web-chat,dev] 2026-06-28 09:23:44.659  WARN 3368 --- [enerContainer-2] i.g.z.c.w.RedisMessageListener           : [Redis] 推送失败，用户 d3add5c52e8a47eab5609ba158cb3e28 未连接WebSocket
+[flash-chat-web-chat,dev] 2026-06-28 09:28:03.541  WARN 3368 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Start destroying common HttpClient
+[flash-chat-web-chat,dev] 2026-06-28 09:28:03.543  WARN 3368 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Destruction of the end
+[flash-chat-web-chat,dev] 2026-06-28 09:28:03.546  WARN 3368 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Start destroying Publisher
+[flash-chat-web-chat,dev] 2026-06-28 09:28:03.546  WARN 3368 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Destruction of the end
+[flash-chat-web-chat,dev] 2026-06-28 09:28:03.663  WARN 3368 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Start destroying NacosRestTemplate
+[flash-chat-web-chat,dev] 2026-06-28 09:28:03.663  WARN 3368 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Destruction of the end
+[flash-chat-web-chat,dev] 2026-06-28 09:28:03.663  WARN 3368 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Start destroying NacosRestTemplate
+[flash-chat-web-chat,dev] 2026-06-28 09:28:03.663  WARN 3368 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Destruction of the end
+[flash-chat-web-chat,dev] 2026-06-28 09:28:03.680  WARN 3368 --- [ionShutdownHook] i.g.z.c.w.ChatWebSocketHandler           : Redis不可用，跳过清理Redis键: userId=9033430053ce4121935164a16c79379b
+[flash-chat-web-chat,dev] 2026-06-28 09:28:16.836  WARN 1304 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-chat] & group[DEFAULT_GROUP]
+[flash-chat-web-chat,dev] 2026-06-28 09:28:16.844  WARN 1304 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-chat.yaml] & group[DEFAULT_GROUP]
+[flash-chat-web-chat,dev] 2026-06-28 10:06:12.000  WARN 1304 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Start destroying common HttpClient
+[flash-chat-web-chat,dev] 2026-06-28 10:06:12.000  WARN 1304 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Start destroying Publisher
+[flash-chat-web-chat,dev] 2026-06-28 10:06:12.000  WARN 1304 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Destruction of the end
+[flash-chat-web-chat,dev] 2026-06-28 10:06:12.001  WARN 1304 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Destruction of the end
+[flash-chat-web-chat,dev] 2026-06-28 10:06:12.144  WARN 1304 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Start destroying NacosRestTemplate
+[flash-chat-web-chat,dev] 2026-06-28 10:06:12.145  WARN 1304 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Destruction of the end
+[flash-chat-web-chat,dev] 2026-06-28 10:06:12.145  WARN 1304 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Start destroying NacosRestTemplate
+[flash-chat-web-chat,dev] 2026-06-28 10:06:12.145  WARN 1304 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Destruction of the end
+[flash-chat-web-chat,dev] 2026-06-28 10:06:12.164  WARN 1304 --- [ionShutdownHook] i.g.z.c.w.ChatWebSocketHandler           : Redis不可用，跳过清理Redis键: userId=9033430053ce4121935164a16c79379b
+[flash-chat-web-chat,dev] 2026-06-28 10:07:03.999  WARN 31712 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-chat] & group[DEFAULT_GROUP]
+[flash-chat-web-chat,dev] 2026-06-28 10:07:04.005  WARN 31712 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-chat.yaml] & group[DEFAULT_GROUP]
+[flash-chat-web-chat,dev] 2026-06-28 10:11:16.147  WARN 31712 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Start destroying Publisher
+[flash-chat-web-chat,dev] 2026-06-28 10:11:16.148  WARN 31712 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Start destroying common HttpClient
+[flash-chat-web-chat,dev] 2026-06-28 10:11:16.148  WARN 31712 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Destruction of the end
+[flash-chat-web-chat,dev] 2026-06-28 10:11:16.148  WARN 31712 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Destruction of the end
+[flash-chat-web-chat,dev] 2026-06-28 10:11:16.277  WARN 31712 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Start destroying NacosRestTemplate
+[flash-chat-web-chat,dev] 2026-06-28 10:11:16.277  WARN 31712 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Destruction of the end
+[flash-chat-web-chat,dev] 2026-06-28 10:11:16.277  WARN 31712 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Start destroying NacosRestTemplate
+[flash-chat-web-chat,dev] 2026-06-28 10:11:16.277  WARN 31712 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Destruction of the end
+[flash-chat-web-chat,dev] 2026-06-28 10:11:16.290  WARN 31712 --- [ionShutdownHook] i.g.z.c.w.ChatWebSocketHandler           : Redis不可用，跳过清理Redis键: userId=9033430053ce4121935164a16c79379b
+[flash-chat-web-chat,dev] 2026-06-28 11:19:22.080  WARN 23348 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-chat] & group[DEFAULT_GROUP]
+[flash-chat-web-chat,dev] 2026-06-28 11:19:22.091  WARN 23348 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-chat.yaml] & group[DEFAULT_GROUP]
+[flash-chat-web-chat,dev] 2026-06-28 11:21:42.134  WARN 23348 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Start destroying Publisher
+[flash-chat-web-chat,dev] 2026-06-28 11:21:42.134  WARN 23348 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Start destroying common HttpClient
+[flash-chat-web-chat,dev] 2026-06-28 11:21:42.135  WARN 23348 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Destruction of the end
+[flash-chat-web-chat,dev] 2026-06-28 11:21:42.135  WARN 23348 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Destruction of the end
+[flash-chat-web-chat,dev] 2026-06-28 11:21:42.270  WARN 23348 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Start destroying NacosRestTemplate
+[flash-chat-web-chat,dev] 2026-06-28 11:21:42.270  WARN 23348 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Destruction of the end
+[flash-chat-web-chat,dev] 2026-06-28 11:21:42.270  WARN 23348 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Start destroying NacosRestTemplate
+[flash-chat-web-chat,dev] 2026-06-28 11:21:42.270  WARN 23348 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Destruction of the end
+[flash-chat-web-chat,dev] 2026-06-28 11:21:47.623  WARN 25888 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-chat] & group[DEFAULT_GROUP]
+[flash-chat-web-chat,dev] 2026-06-28 11:21:47.632  WARN 25888 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-chat.yaml] & group[DEFAULT_GROUP]
+[flash-chat-web-chat,dev] 2026-06-28 11:33:48.445  WARN 25888 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Start destroying common HttpClient
+[flash-chat-web-chat,dev] 2026-06-28 11:33:48.445  WARN 25888 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Start destroying Publisher
+[flash-chat-web-chat,dev] 2026-06-28 11:33:48.445  WARN 25888 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Destruction of the end
+[flash-chat-web-chat,dev] 2026-06-28 11:33:48.445  WARN 25888 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Destruction of the end
+[flash-chat-web-chat,dev] 2026-06-28 11:33:48.585  WARN 25888 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Start destroying NacosRestTemplate
+[flash-chat-web-chat,dev] 2026-06-28 11:33:48.585  WARN 25888 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Destruction of the end
+[flash-chat-web-chat,dev] 2026-06-28 11:33:48.585  WARN 25888 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Start destroying NacosRestTemplate
+[flash-chat-web-chat,dev] 2026-06-28 11:33:48.585  WARN 25888 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Destruction of the end
+[flash-chat-web-chat,dev] 2026-06-28 11:33:55.064  WARN 25004 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-chat] & group[DEFAULT_GROUP]
+[flash-chat-web-chat,dev] 2026-06-28 11:33:55.069  WARN 25004 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-chat.yaml] & group[DEFAULT_GROUP]
+[flash-chat-web-chat,dev] 2026-06-28 11:39:10.051  WARN 25004 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Start destroying Publisher
+[flash-chat-web-chat,dev] 2026-06-28 11:39:10.051  WARN 25004 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Start destroying common HttpClient
+[flash-chat-web-chat,dev] 2026-06-28 11:39:10.052  WARN 25004 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Destruction of the end
+[flash-chat-web-chat,dev] 2026-06-28 11:39:10.052  WARN 25004 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Destruction of the end
+[flash-chat-web-chat,dev] 2026-06-28 11:39:10.202  WARN 25004 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Start destroying NacosRestTemplate
+[flash-chat-web-chat,dev] 2026-06-28 11:39:10.202  WARN 25004 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Destruction of the end
+[flash-chat-web-chat,dev] 2026-06-28 11:39:10.202  WARN 25004 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Start destroying NacosRestTemplate
+[flash-chat-web-chat,dev] 2026-06-28 11:39:10.202  WARN 25004 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Destruction of the end
+[flash-chat-web-chat,dev] 2026-06-28 11:39:10.230  WARN 25004 --- [ionShutdownHook] i.g.z.c.w.ChatWebSocketHandler           : Redis不可用，跳过清理Redis键: userId=9033430053ce4121935164a16c79379b
+[flash-chat-web-chat,dev] 2026-06-28 12:18:12.625  WARN 27532 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-chat] & group[DEFAULT_GROUP]
+[flash-chat-web-chat,dev] 2026-06-28 12:18:12.632  WARN 27532 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-chat.yaml] & group[DEFAULT_GROUP]
+[flash-chat-web-chat,dev] 2026-06-28 12:38:39.301  WARN 27532 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Start destroying Publisher
+[flash-chat-web-chat,dev] 2026-06-28 12:38:39.301  WARN 27532 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Start destroying common HttpClient
+[flash-chat-web-chat,dev] 2026-06-28 12:38:39.301  WARN 27532 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Destruction of the end
+[flash-chat-web-chat,dev] 2026-06-28 12:38:39.302  WARN 27532 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Destruction of the end
+[flash-chat-web-chat,dev] 2026-06-28 12:38:39.441  WARN 27532 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Start destroying NacosRestTemplate
+[flash-chat-web-chat,dev] 2026-06-28 12:38:39.441  WARN 27532 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Destruction of the end
+[flash-chat-web-chat,dev] 2026-06-28 12:38:39.441  WARN 27532 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Start destroying NacosRestTemplate
+[flash-chat-web-chat,dev] 2026-06-28 12:38:39.441  WARN 27532 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Destruction of the end
+[flash-chat-web-chat,dev] 2026-06-28 12:38:39.457  WARN 27532 --- [ionShutdownHook] i.g.z.c.w.ChatWebSocketHandler           : Redis不可用，跳过清理Redis键: userId=9033430053ce4121935164a16c79379b
+[flash-chat-web-chat,dev] 2026-06-28 13:53:51.836  WARN 27816 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-chat] & group[DEFAULT_GROUP]
+[flash-chat-web-chat,dev] 2026-06-28 13:53:51.843  WARN 27816 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-chat.yaml] & group[DEFAULT_GROUP]
+[flash-chat-web-chat,dev] 2026-06-28 13:58:07.830  WARN 27816 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Start destroying common HttpClient
+[flash-chat-web-chat,dev] 2026-06-28 13:58:07.830  WARN 27816 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Start destroying Publisher
+[flash-chat-web-chat,dev] 2026-06-28 13:58:07.830  WARN 27816 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Destruction of the end
+[flash-chat-web-chat,dev] 2026-06-28 13:58:07.830  WARN 27816 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Destruction of the end
+[flash-chat-web-chat,dev] 2026-06-28 13:58:08.272  WARN 27816 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Start destroying NacosRestTemplate
+[flash-chat-web-chat,dev] 2026-06-28 13:58:08.272  WARN 27816 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Destruction of the end
+[flash-chat-web-chat,dev] 2026-06-28 13:58:08.272  WARN 27816 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Start destroying NacosRestTemplate
+[flash-chat-web-chat,dev] 2026-06-28 13:58:08.272  WARN 27816 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Destruction of the end
+[flash-chat-web-chat,dev] 2026-06-28 13:58:14.567  WARN 9480 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-chat] & group[DEFAULT_GROUP]
+[flash-chat-web-chat,dev] 2026-06-28 13:58:14.572  WARN 9480 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-chat.yaml] & group[DEFAULT_GROUP]
+[flash-chat-web-chat,dev] 2026-06-28 14:09:37.647  WARN 9480 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Start destroying Publisher
+[flash-chat-web-chat,dev] 2026-06-28 14:09:37.649  WARN 9480 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Start destroying common HttpClient
+[flash-chat-web-chat,dev] 2026-06-28 14:09:37.649  WARN 9480 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Destruction of the end
+[flash-chat-web-chat,dev] 2026-06-28 14:09:37.649  WARN 9480 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Destruction of the end
+[flash-chat-web-chat,dev] 2026-06-28 14:09:38.658  WARN 9480 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Start destroying NacosRestTemplate
+[flash-chat-web-chat,dev] 2026-06-28 14:09:38.658  WARN 9480 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Destruction of the end
+[flash-chat-web-chat,dev] 2026-06-28 14:09:38.658  WARN 9480 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Start destroying NacosRestTemplate
+[flash-chat-web-chat,dev] 2026-06-28 14:09:38.658  WARN 9480 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Destruction of the end
+[flash-chat-web-chat,dev] 2026-06-28 14:10:22.842  WARN 24740 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-chat] & group[DEFAULT_GROUP]
+[flash-chat-web-chat,dev] 2026-06-28 14:10:22.848  WARN 24740 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-chat.yaml] & group[DEFAULT_GROUP]
+[flash-chat-web-chat,dev] 2026-06-28 14:18:12.883  WARN 24740 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Start destroying Publisher
+[flash-chat-web-chat,dev] 2026-06-28 14:18:12.883  WARN 24740 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Start destroying common HttpClient
+[flash-chat-web-chat,dev] 2026-06-28 14:18:12.883  WARN 24740 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Destruction of the end
+[flash-chat-web-chat,dev] 2026-06-28 14:18:12.885  WARN 24740 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Destruction of the end
+[flash-chat-web-chat,dev] 2026-06-28 14:18:13.484  WARN 24740 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Start destroying NacosRestTemplate
+[flash-chat-web-chat,dev] 2026-06-28 14:18:13.485  WARN 24740 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Destruction of the end
+[flash-chat-web-chat,dev] 2026-06-28 14:18:13.485  WARN 24740 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Start destroying NacosRestTemplate
+[flash-chat-web-chat,dev] 2026-06-28 14:18:13.485  WARN 24740 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Destruction of the end
+[flash-chat-web-chat,dev] 2026-06-28 14:18:18.218  WARN 11636 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-chat] & group[DEFAULT_GROUP]
+[flash-chat-web-chat,dev] 2026-06-28 14:18:18.225  WARN 11636 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-chat.yaml] & group[DEFAULT_GROUP]
+[flash-chat-web-chat,dev] 2026-06-28 14:26:52.423  WARN 11636 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Start destroying common HttpClient
+[flash-chat-web-chat,dev] 2026-06-28 14:26:52.423  WARN 11636 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Start destroying Publisher
+[flash-chat-web-chat,dev] 2026-06-28 14:26:52.423  WARN 11636 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Destruction of the end
+[flash-chat-web-chat,dev] 2026-06-28 14:26:52.423  WARN 11636 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Destruction of the end
+[flash-chat-web-chat,dev] 2026-06-28 14:26:53.110  WARN 11636 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Start destroying NacosRestTemplate
+[flash-chat-web-chat,dev] 2026-06-28 14:26:53.110  WARN 11636 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Destruction of the end
+[flash-chat-web-chat,dev] 2026-06-28 14:26:53.110  WARN 11636 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Start destroying NacosRestTemplate
+[flash-chat-web-chat,dev] 2026-06-28 14:26:53.110  WARN 11636 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Destruction of the end
+[flash-chat-web-chat,dev] 2026-06-28 14:26:53.124  WARN 11636 --- [ionShutdownHook] i.g.z.c.w.ChatWebSocketHandler           : Redis不可用，跳过清理Redis键: userId=9033430053ce4121935164a16c79379b
+[flash-chat-web-chat,dev] 2026-06-28 14:55:06.422  WARN 34756 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-chat] & group[DEFAULT_GROUP]
+[flash-chat-web-chat,dev] 2026-06-28 14:55:06.427  WARN 34756 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-chat.yaml] & group[DEFAULT_GROUP]
+[flash-chat-web-chat,dev] 2026-06-28 14:55:10.431  WARN 34756 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+[flash-chat-web-chat,dev] 2026-06-28 14:55:11.439  WARN 34756 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Start destroying common HttpClient
+[flash-chat-web-chat,dev] 2026-06-28 14:55:11.439  WARN 34756 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Start destroying Publisher
+[flash-chat-web-chat,dev] 2026-06-28 14:55:11.439  WARN 34756 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Destruction of the end
+[flash-chat-web-chat,dev] 2026-06-28 14:55:11.440  WARN 34756 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Destruction of the end
+[flash-chat-web-chat,dev] 2026-06-28 14:56:26.041  WARN 29548 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-chat] & group[DEFAULT_GROUP]
+[flash-chat-web-chat,dev] 2026-06-28 14:56:26.047  WARN 29548 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-chat.yaml] & group[DEFAULT_GROUP]
+[flash-chat-web-chat,dev] 2026-06-28 14:58:43.042  WARN 29548 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Start destroying common HttpClient
+[flash-chat-web-chat,dev] 2026-06-28 14:58:43.042  WARN 29548 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Start destroying Publisher
+[flash-chat-web-chat,dev] 2026-06-28 14:58:43.042  WARN 29548 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Destruction of the end
+[flash-chat-web-chat,dev] 2026-06-28 14:58:43.042  WARN 29548 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Destruction of the end
+[flash-chat-web-chat,dev] 2026-06-28 14:58:43.753  WARN 29548 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Start destroying NacosRestTemplate
+[flash-chat-web-chat,dev] 2026-06-28 14:58:43.753  WARN 29548 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Destruction of the end
+[flash-chat-web-chat,dev] 2026-06-28 14:58:43.753  WARN 29548 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Start destroying NacosRestTemplate
+[flash-chat-web-chat,dev] 2026-06-28 14:58:43.753  WARN 29548 --- [ionShutdownHook] c.a.n.c.naming                           : [NamingHttpClientManager] Destruction of the end

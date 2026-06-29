@@ -1,0 +1,25 @@
+server:
+  port: 1001
+
+spring:
+
+#  config:
+#    import:
+#      - nacos:127.0.0.1:8848
+#  cloud:
+#    nacos:
+#      config:
+#        server-addr: 127.0.0.1:8848
+
+logging:
+  level:
+    root: WARN
+  config: classpath:logback-config.xml
+
+
+##IPFILTER
+ip:
+  filter:
+    request-count: 10
+    request-interval: 30
+    black-ip-time: 60

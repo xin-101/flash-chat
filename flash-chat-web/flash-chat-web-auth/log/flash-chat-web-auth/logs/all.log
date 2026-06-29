@@ -1,0 +1,876 @@
+[flash-chat-web-auth,dev] 2026-06-28 13:27:20.069  WARN 29380 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-auth] & group[DEFAULT_GROUP]
+[flash-chat-web-auth,dev] 2026-06-28 13:27:20.083  WARN 29380 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-auth.yaml] & group[DEFAULT_GROUP]
+[flash-chat-web-auth,dev] 2026-06-28 13:27:20.096  INFO 29380 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-flash-chat-web-auth-dev.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-flash-chat-web-auth.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-flash-chat-web-auth,DEFAULT_GROUP'}]
+[flash-chat-web-auth,dev] 2026-06-28 13:27:20.114  INFO 29380 --- [           main] i.g.z.a.AuthApplication                  : The following 1 profile is active: "dev"
+[flash-chat-web-auth,dev] 2026-06-28 13:27:20.121  INFO 29380 --- [           main] c.a.c.n.c.NacosConfigDataLoader          : [Nacos Config] Load config[dataId=flash-chat-web-auth-dev.yaml, group=DEFAULT_GROUP] success
+[flash-chat-web-auth,dev] 2026-06-28 13:27:20.428  INFO 29380 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+[flash-chat-web-auth,dev] 2026-06-28 13:27:20.429  INFO 29380 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[flash-chat-web-auth,dev] 2026-06-28 13:27:20.441  INFO 29380 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+[flash-chat-web-auth,dev] 2026-06-28 13:27:20.529  INFO 29380 --- [           main] o.s.c.c.s.GenericScope                   : BeanFactory id=757d3744-0e09-3ac3-bb15-e7a8db7f2f18
+[flash-chat-web-auth,dev] 2026-06-28 13:27:20.869  INFO 29380 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8890 (http)
+[flash-chat-web-auth,dev] 2026-06-28 13:27:20.871  INFO 29380 --- [           main] o.a.c.c.AprLifecycleListener             : An older version [1.2.35] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [2.0.5]
+[flash-chat-web-auth,dev] 2026-06-28 13:27:20.871  INFO 29380 --- [           main] o.a.c.c.AprLifecycleListener             : Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+[flash-chat-web-auth,dev] 2026-06-28 13:27:20.883  INFO 29380 --- [           main] o.a.c.c.AprLifecycleListener             : OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+[flash-chat-web-auth,dev] 2026-06-28 13:27:20.888  INFO 29380 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8890"]
+[flash-chat-web-auth,dev] 2026-06-28 13:27:20.890  INFO 29380 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+[flash-chat-web-auth,dev] 2026-06-28 13:27:20.890  INFO 29380 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.19]
+[flash-chat-web-auth,dev] 2026-06-28 13:27:20.925  INFO 29380 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+[flash-chat-web-auth,dev] 2026-06-28 13:27:20.926  INFO 29380 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 804 ms
+[flash-chat-web-auth,dev] 2026-06-28 13:27:20.967  WARN 29380 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'webInterceptorConfig': Injection of resource dependencies failed
+[flash-chat-web-auth,dev] 2026-06-28 13:27:20.968  INFO 29380 --- [           main] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+[flash-chat-web-auth,dev] 2026-06-28 13:27:21.045  INFO 29380 --- [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[flash-chat-web-auth,dev] 2026-06-28 13:27:21.054 ERROR 29380 --- [           main] o.s.b.SpringApplication                  : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'webInterceptorConfig': Injection of resource dependencies failed
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:369)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1419)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at io.github.zh.auth.AuthApplication.main(AuthApplication.java:12)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'SMSInterceptor' defined in file [D:\JavaProjects\flash-chat\flash-chat-web\flash-chat-web-auth\target\classes\io\github\zh\auth\interceptor\SMSInterceptor.class]: Failed to instantiate [io.github.zh.auth.interceptor.SMSInterceptor]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1317)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:596)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:574)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:736)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:270)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:366)
+	... 17 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [io.github.zh.auth.interceptor.SMSInterceptor]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:221)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:88)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1311)
+	... 33 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The import io.github.zh.common.exception cannot be resolved
+	The import io.github.zh.common.utils cannot be resolved
+	The import io.github.zh.common.utils cannot be resolved
+	RedisUtil cannot be resolved to a type
+	IPUtil cannot be resolved
+	RedisUtil cannot be resolved to a type
+	BizException cannot be resolved to a type
+
+	at io.github.zh.auth.interceptor.SMSInterceptor.<init>(SMSInterceptor.java:5)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:195)
+	... 35 common frames omitted
+
+[flash-chat-web-auth,dev] 2026-06-28 13:27:21.059  WARN 29380 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Start destroying common HttpClient
+[flash-chat-web-auth,dev] 2026-06-28 13:27:21.059  WARN 29380 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Start destroying Publisher
+[flash-chat-web-auth,dev] 2026-06-28 13:27:21.060  WARN 29380 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 13:27:21.061  WARN 29380 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 13:28:40.102  WARN 34140 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-auth] & group[DEFAULT_GROUP]
+[flash-chat-web-auth,dev] 2026-06-28 13:28:40.108  WARN 34140 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-auth.yaml] & group[DEFAULT_GROUP]
+[flash-chat-web-auth,dev] 2026-06-28 13:28:40.124  INFO 34140 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-flash-chat-web-auth-dev.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-flash-chat-web-auth.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-flash-chat-web-auth,DEFAULT_GROUP'}]
+[flash-chat-web-auth,dev] 2026-06-28 13:28:40.140  INFO 34140 --- [           main] i.g.z.a.AuthApplication                  : The following 1 profile is active: "dev"
+[flash-chat-web-auth,dev] 2026-06-28 13:28:40.147  INFO 34140 --- [           main] c.a.c.n.c.NacosConfigDataLoader          : [Nacos Config] Load config[dataId=flash-chat-web-auth-dev.yaml, group=DEFAULT_GROUP] success
+[flash-chat-web-auth,dev] 2026-06-28 13:28:40.397  INFO 34140 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+[flash-chat-web-auth,dev] 2026-06-28 13:28:40.399  INFO 34140 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[flash-chat-web-auth,dev] 2026-06-28 13:28:40.410  INFO 34140 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+[flash-chat-web-auth,dev] 2026-06-28 13:28:40.505  INFO 34140 --- [           main] o.s.c.c.s.GenericScope                   : BeanFactory id=757d3744-0e09-3ac3-bb15-e7a8db7f2f18
+[flash-chat-web-auth,dev] 2026-06-28 13:28:40.783  INFO 34140 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8890 (http)
+[flash-chat-web-auth,dev] 2026-06-28 13:28:40.785  INFO 34140 --- [           main] o.a.c.c.AprLifecycleListener             : An older version [1.2.35] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [2.0.5]
+[flash-chat-web-auth,dev] 2026-06-28 13:28:40.785  INFO 34140 --- [           main] o.a.c.c.AprLifecycleListener             : Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+[flash-chat-web-auth,dev] 2026-06-28 13:28:40.787  INFO 34140 --- [           main] o.a.c.c.AprLifecycleListener             : OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+[flash-chat-web-auth,dev] 2026-06-28 13:28:40.793  INFO 34140 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8890"]
+[flash-chat-web-auth,dev] 2026-06-28 13:28:40.795  INFO 34140 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+[flash-chat-web-auth,dev] 2026-06-28 13:28:40.796  INFO 34140 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.19]
+[flash-chat-web-auth,dev] 2026-06-28 13:28:40.834  INFO 34140 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+[flash-chat-web-auth,dev] 2026-06-28 13:28:40.834  INFO 34140 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 687 ms
+[flash-chat-web-auth,dev] 2026-06-28 13:28:40.864  WARN 34140 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'webInterceptorConfig': Injection of resource dependencies failed
+[flash-chat-web-auth,dev] 2026-06-28 13:28:40.865  INFO 34140 --- [           main] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+[flash-chat-web-auth,dev] 2026-06-28 13:28:40.915  INFO 34140 --- [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[flash-chat-web-auth,dev] 2026-06-28 13:28:40.924 ERROR 34140 --- [           main] o.s.b.SpringApplication                  : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'webInterceptorConfig': Injection of resource dependencies failed
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:369)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1419)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at io.github.zh.auth.AuthApplication.main(AuthApplication.java:12)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'SMSInterceptor' defined in file [D:\JavaProjects\flash-chat\flash-chat-web\flash-chat-web-auth\target\classes\io\github\zh\auth\interceptor\SMSInterceptor.class]: Failed to instantiate [io.github.zh.auth.interceptor.SMSInterceptor]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1317)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:596)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:574)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:736)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:270)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:366)
+	... 17 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [io.github.zh.auth.interceptor.SMSInterceptor]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:221)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:88)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1311)
+	... 33 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The import io.github.zh.common.exception cannot be resolved
+	The import io.github.zh.common.utils cannot be resolved
+	The import io.github.zh.common.utils cannot be resolved
+	RedisUtil cannot be resolved to a type
+	IPUtil cannot be resolved
+	RedisUtil cannot be resolved to a type
+	BizException cannot be resolved to a type
+
+	at io.github.zh.auth.interceptor.SMSInterceptor.<init>(SMSInterceptor.java:5)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:195)
+	... 35 common frames omitted
+
+[flash-chat-web-auth,dev] 2026-06-28 13:28:40.926  WARN 34140 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Start destroying Publisher
+[flash-chat-web-auth,dev] 2026-06-28 13:28:40.926  WARN 34140 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Start destroying common HttpClient
+[flash-chat-web-auth,dev] 2026-06-28 13:28:40.926  WARN 34140 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 13:29:34.226  WARN 24332 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-auth] & group[DEFAULT_GROUP]
+[flash-chat-web-auth,dev] 2026-06-28 13:29:34.233  WARN 24332 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-auth.yaml] & group[DEFAULT_GROUP]
+[flash-chat-web-auth,dev] 2026-06-28 13:29:34.245  INFO 24332 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-flash-chat-web-auth-dev.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-flash-chat-web-auth.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-flash-chat-web-auth,DEFAULT_GROUP'}]
+[flash-chat-web-auth,dev] 2026-06-28 13:29:34.271  INFO 24332 --- [           main] i.g.z.a.AuthApplication                  : The following 1 profile is active: "dev"
+[flash-chat-web-auth,dev] 2026-06-28 13:29:34.280  INFO 24332 --- [           main] c.a.c.n.c.NacosConfigDataLoader          : [Nacos Config] Load config[dataId=flash-chat-web-auth-dev.yaml, group=DEFAULT_GROUP] success
+[flash-chat-web-auth,dev] 2026-06-28 13:29:34.558  INFO 24332 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+[flash-chat-web-auth,dev] 2026-06-28 13:29:34.560  INFO 24332 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[flash-chat-web-auth,dev] 2026-06-28 13:29:34.572  INFO 24332 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+[flash-chat-web-auth,dev] 2026-06-28 13:29:34.671  INFO 24332 --- [           main] o.s.c.c.s.GenericScope                   : BeanFactory id=757d3744-0e09-3ac3-bb15-e7a8db7f2f18
+[flash-chat-web-auth,dev] 2026-06-28 13:29:35.005  INFO 24332 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8890 (http)
+[flash-chat-web-auth,dev] 2026-06-28 13:29:35.009  INFO 24332 --- [           main] o.a.c.c.AprLifecycleListener             : An older version [1.2.35] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [2.0.5]
+[flash-chat-web-auth,dev] 2026-06-28 13:29:35.009  INFO 24332 --- [           main] o.a.c.c.AprLifecycleListener             : Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+[flash-chat-web-auth,dev] 2026-06-28 13:29:35.012  INFO 24332 --- [           main] o.a.c.c.AprLifecycleListener             : OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+[flash-chat-web-auth,dev] 2026-06-28 13:29:35.017  INFO 24332 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8890"]
+[flash-chat-web-auth,dev] 2026-06-28 13:29:35.018  INFO 24332 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+[flash-chat-web-auth,dev] 2026-06-28 13:29:35.018  INFO 24332 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.19]
+[flash-chat-web-auth,dev] 2026-06-28 13:29:35.049  INFO 24332 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+[flash-chat-web-auth,dev] 2026-06-28 13:29:35.049  INFO 24332 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 768 ms
+[flash-chat-web-auth,dev] 2026-06-28 13:29:35.239  WARN 24332 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'authController': Lookup method resolution failed
+[flash-chat-web-auth,dev] 2026-06-28 13:29:35.247  INFO 24332 --- [           main] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+[flash-chat-web-auth,dev] 2026-06-28 13:29:35.299  INFO 24332 --- [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[flash-chat-web-auth,dev] 2026-06-28 13:29:35.308 ERROR 24332 --- [           main] o.s.b.SpringApplication                  : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'authController': Lookup method resolution failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:497)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:367)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1294)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at io.github.zh.auth.AuthApplication.main(AuthApplication.java:12)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [io.github.zh.auth.controller.AuthController] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@4aa298b7]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:475)
+	... 19 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: io/github/zh/model/auth/bo/UpdateUserBO
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3578)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2676)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465)
+	... 21 common frames omitted
+Caused by: java.lang.ClassNotFoundException: io.github.zh.model.auth.bo.UpdateUserBO
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	... 25 common frames omitted
+
+[flash-chat-web-auth,dev] 2026-06-28 13:29:36.106  WARN 24332 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Start destroying Publisher
+[flash-chat-web-auth,dev] 2026-06-28 13:29:36.106  WARN 24332 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Start destroying common HttpClient
+[flash-chat-web-auth,dev] 2026-06-28 13:29:36.106  WARN 24332 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 13:31:08.786  WARN 12060 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-auth] & group[DEFAULT_GROUP]
+[flash-chat-web-auth,dev] 2026-06-28 13:31:08.793  WARN 12060 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-auth.yaml] & group[DEFAULT_GROUP]
+[flash-chat-web-auth,dev] 2026-06-28 13:31:08.805  INFO 12060 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-flash-chat-web-auth-dev.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-flash-chat-web-auth.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-flash-chat-web-auth,DEFAULT_GROUP'}]
+[flash-chat-web-auth,dev] 2026-06-28 13:31:08.820  INFO 12060 --- [           main] i.g.z.a.AuthApplication                  : The following 1 profile is active: "dev"
+[flash-chat-web-auth,dev] 2026-06-28 13:31:08.829  INFO 12060 --- [           main] c.a.c.n.c.NacosConfigDataLoader          : [Nacos Config] Load config[dataId=flash-chat-web-auth-dev.yaml, group=DEFAULT_GROUP] success
+[flash-chat-web-auth,dev] 2026-06-28 13:31:09.065  INFO 12060 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+[flash-chat-web-auth,dev] 2026-06-28 13:31:09.067  INFO 12060 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[flash-chat-web-auth,dev] 2026-06-28 13:31:09.079  INFO 12060 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+[flash-chat-web-auth,dev] 2026-06-28 13:31:09.171  INFO 12060 --- [           main] o.s.c.c.s.GenericScope                   : BeanFactory id=757d3744-0e09-3ac3-bb15-e7a8db7f2f18
+[flash-chat-web-auth,dev] 2026-06-28 13:31:09.481  INFO 12060 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8890 (http)
+[flash-chat-web-auth,dev] 2026-06-28 13:31:09.483  INFO 12060 --- [           main] o.a.c.c.AprLifecycleListener             : An older version [1.2.35] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [2.0.5]
+[flash-chat-web-auth,dev] 2026-06-28 13:31:09.483  INFO 12060 --- [           main] o.a.c.c.AprLifecycleListener             : Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+[flash-chat-web-auth,dev] 2026-06-28 13:31:09.485  INFO 12060 --- [           main] o.a.c.c.AprLifecycleListener             : OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+[flash-chat-web-auth,dev] 2026-06-28 13:31:09.490  INFO 12060 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8890"]
+[flash-chat-web-auth,dev] 2026-06-28 13:31:09.490  INFO 12060 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+[flash-chat-web-auth,dev] 2026-06-28 13:31:09.490  INFO 12060 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.19]
+[flash-chat-web-auth,dev] 2026-06-28 13:31:09.522  INFO 12060 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+[flash-chat-web-auth,dev] 2026-06-28 13:31:09.522  INFO 12060 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 693 ms
+[flash-chat-web-auth,dev] 2026-06-28 13:31:09.683  WARN 12060 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'authController': Lookup method resolution failed
+[flash-chat-web-auth,dev] 2026-06-28 13:31:09.690  INFO 12060 --- [           main] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+[flash-chat-web-auth,dev] 2026-06-28 13:31:09.739  INFO 12060 --- [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[flash-chat-web-auth,dev] 2026-06-28 13:31:09.746 ERROR 12060 --- [           main] o.s.b.SpringApplication                  : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'authController': Lookup method resolution failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:497)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:367)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1294)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at io.github.zh.auth.AuthApplication.main(AuthApplication.java:12)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [io.github.zh.auth.controller.AuthController] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@6bc7c054]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:475)
+	... 19 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: io/github/zh/model/auth/bo/UpdateUserBO
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3578)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2676)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465)
+	... 21 common frames omitted
+Caused by: java.lang.ClassNotFoundException: io.github.zh.model.auth.bo.UpdateUserBO
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	... 25 common frames omitted
+
+[flash-chat-web-auth,dev] 2026-06-28 13:31:10.577  WARN 12060 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Start destroying common HttpClient
+[flash-chat-web-auth,dev] 2026-06-28 13:31:10.577  WARN 12060 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Start destroying Publisher
+[flash-chat-web-auth,dev] 2026-06-28 13:31:10.578  WARN 12060 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 13:31:41.218  WARN 13304 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-auth] & group[DEFAULT_GROUP]
+[flash-chat-web-auth,dev] 2026-06-28 13:31:41.226  WARN 13304 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-auth.yaml] & group[DEFAULT_GROUP]
+[flash-chat-web-auth,dev] 2026-06-28 13:31:41.236  INFO 13304 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-flash-chat-web-auth-dev.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-flash-chat-web-auth.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-flash-chat-web-auth,DEFAULT_GROUP'}]
+[flash-chat-web-auth,dev] 2026-06-28 13:31:41.254  INFO 13304 --- [           main] i.g.z.a.AuthApplication                  : The following 1 profile is active: "dev"
+[flash-chat-web-auth,dev] 2026-06-28 13:31:41.259  INFO 13304 --- [           main] c.a.c.n.c.NacosConfigDataLoader          : [Nacos Config] Load config[dataId=flash-chat-web-auth-dev.yaml, group=DEFAULT_GROUP] success
+[flash-chat-web-auth,dev] 2026-06-28 13:31:41.539  INFO 13304 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+[flash-chat-web-auth,dev] 2026-06-28 13:31:41.541  INFO 13304 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[flash-chat-web-auth,dev] 2026-06-28 13:31:41.553  INFO 13304 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+[flash-chat-web-auth,dev] 2026-06-28 13:31:41.649  INFO 13304 --- [           main] o.s.c.c.s.GenericScope                   : BeanFactory id=757d3744-0e09-3ac3-bb15-e7a8db7f2f18
+[flash-chat-web-auth,dev] 2026-06-28 13:31:41.959  INFO 13304 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8890 (http)
+[flash-chat-web-auth,dev] 2026-06-28 13:31:41.962  INFO 13304 --- [           main] o.a.c.c.AprLifecycleListener             : An older version [1.2.35] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [2.0.5]
+[flash-chat-web-auth,dev] 2026-06-28 13:31:41.962  INFO 13304 --- [           main] o.a.c.c.AprLifecycleListener             : Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+[flash-chat-web-auth,dev] 2026-06-28 13:31:41.964  INFO 13304 --- [           main] o.a.c.c.AprLifecycleListener             : OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+[flash-chat-web-auth,dev] 2026-06-28 13:31:41.970  INFO 13304 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8890"]
+[flash-chat-web-auth,dev] 2026-06-28 13:31:41.971  INFO 13304 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+[flash-chat-web-auth,dev] 2026-06-28 13:31:41.971  INFO 13304 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.19]
+[flash-chat-web-auth,dev] 2026-06-28 13:31:42.018  INFO 13304 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+[flash-chat-web-auth,dev] 2026-06-28 13:31:42.018  INFO 13304 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 758 ms
+[flash-chat-web-auth,dev] 2026-06-28 13:31:43.637  INFO 13304 --- [           main] o.s.c.c.u.InetUtils                      : Cannot determine local hostname
+[flash-chat-web-auth,dev] 2026-06-28 13:31:44.794  INFO 13304 --- [           main] o.s.c.c.u.InetUtils                      : Cannot determine local hostname
+[flash-chat-web-auth,dev] 2026-06-28 13:31:44.814  INFO 13304 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8890"]
+[flash-chat-web-auth,dev] 2026-06-28 13:31:44.825  INFO 13304 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8890 (http) with context path ''
+[flash-chat-web-auth,dev] 2026-06-28 13:31:44.832  INFO 13304 --- [           main] c.a.n.c.naming                           : initializer namespace from ans.namespace attribute : null
+[flash-chat-web-auth,dev] 2026-06-28 13:31:44.832  INFO 13304 --- [           main] c.a.n.c.naming                           : initializer namespace from ALIBABA_ALIWARE_NAMESPACE attribute :null
+[flash-chat-web-auth,dev] 2026-06-28 13:31:44.832  INFO 13304 --- [           main] c.a.n.c.naming                           : initializer namespace from namespace attribute :null
+[flash-chat-web-auth,dev] 2026-06-28 13:31:44.836  INFO 13304 --- [           main] c.a.n.c.naming                           : FailoverDataSource type is class com.alibaba.nacos.client.naming.backups.datasource.DiskFailoverDataSource
+[flash-chat-web-auth,dev] 2026-06-28 13:31:44.839  INFO 13304 --- [           main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+[flash-chat-web-auth,dev] 2026-06-28 13:31:44.841  INFO 13304 --- [           main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+[flash-chat-web-auth,dev] 2026-06-28 13:31:44.843  INFO 13304 --- [           main] c.a.n.c.r.client                         : [RpcClientFactory] create a new rpc client of 1bb397c6-4151-4ad6-a66a-d9888534de9d
+[flash-chat-web-auth,dev] 2026-06-28 13:31:44.845  INFO 13304 --- [           main] c.a.n.c.naming                           : Create naming rpc client for uuid->1bb397c6-4151-4ad6-a66a-d9888534de9d
+[flash-chat-web-auth,dev] 2026-06-28 13:31:44.845  INFO 13304 --- [           main] c.a.n.c.r.client                         : [1bb397c6-4151-4ad6-a66a-d9888534de9d] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+[flash-chat-web-auth,dev] 2026-06-28 13:31:44.845  INFO 13304 --- [           main] c.a.n.c.r.client                         : [1bb397c6-4151-4ad6-a66a-d9888534de9d] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+[flash-chat-web-auth,dev] 2026-06-28 13:31:44.846  INFO 13304 --- [           main] c.a.n.c.r.client                         : [1bb397c6-4151-4ad6-a66a-d9888534de9d] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+[flash-chat-web-auth,dev] 2026-06-28 13:31:44.846  INFO 13304 --- [           main] c.a.n.c.r.client                         : [1bb397c6-4151-4ad6-a66a-d9888534de9d] Try to connect to server on start up, server: {serverIp = '127.0.0.1', server main port = 8848}
+[flash-chat-web-auth,dev] 2026-06-28 13:31:44.846  INFO 13304 --- [           main] c.a.n.c.r.c.g.GrpcClient                 : grpc client connection server:127.0.0.1 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+[flash-chat-web-auth,dev] 2026-06-28 13:31:44.861  INFO 13304 --- [           main] c.a.n.c.r.client                         : [1bb397c6-4151-4ad6-a66a-d9888534de9d] Success to connect to server [127.0.0.1:8848] on start up, connectionId = 1782624704850_172.17.0.1_59546
+[flash-chat-web-auth,dev] 2026-06-28 13:31:44.861  INFO 13304 --- [           main] c.a.n.c.r.client                         : [1bb397c6-4151-4ad6-a66a-d9888534de9d] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+[flash-chat-web-auth,dev] 2026-06-28 13:31:44.861  INFO 13304 --- [remote.worker.1] c.a.n.c.r.client                         : [1bb397c6-4151-4ad6-a66a-d9888534de9d] Notify connected event to listeners.
+[flash-chat-web-auth,dev] 2026-06-28 13:31:44.861  INFO 13304 --- [           main] c.a.n.c.r.client                         : [1bb397c6-4151-4ad6-a66a-d9888534de9d] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda/0x000001cf94352320
+[flash-chat-web-auth,dev] 2026-06-28 13:31:44.861  INFO 13304 --- [remote.worker.1] c.a.n.c.naming                           : Grpc connection connect
+[flash-chat-web-auth,dev] 2026-06-28 13:31:44.862  INFO 13304 --- [           main] c.a.n.c.naming                           : [REGISTER-SERVICE] public registering service flash-chat-web-auth with instance Instance{instanceId='null', ip='192.168.10.1', port=8890, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={IPv6=null, preserved.register.source=SPRING_CLOUD}}
+[flash-chat-web-auth,dev] 2026-06-28 13:31:44.870  INFO 13304 --- [           main] c.a.c.n.r.NacosServiceRegistry           : nacos registry, DEFAULT_GROUP flash-chat-web-auth 192.168.10.1:8890 register finished
+[flash-chat-web-auth,dev] 2026-06-28 13:31:45.883  INFO 13304 --- [           main] o.s.c.c.u.InetUtils                      : Cannot determine local hostname
+[flash-chat-web-auth,dev] 2026-06-28 13:31:45.889  INFO 13304 --- [           main] i.g.z.a.AuthApplication                  : Started AuthApplication in 8.043 seconds (process running for 8.434)
+[flash-chat-web-auth,dev] 2026-06-28 13:31:45.894  INFO 13304 --- [           main] c.a.n.c.c.i.CacheData                    : config listener notify warn timeout millis use default 60000 millis 
+[flash-chat-web-auth,dev] 2026-06-28 13:31:45.894  INFO 13304 --- [           main] c.a.n.c.c.i.CacheData                    : nacos.cache.data.init.snapshot = true 
+[flash-chat-web-auth,dev] 2026-06-28 13:31:45.895  INFO 13304 --- [           main] c.a.n.c.c.i.ClientWorker                 : [fixed-127.0.0.1_8848] [subscribe] flash-chat-web-auth+DEFAULT_GROUP
+[flash-chat-web-auth,dev] 2026-06-28 13:31:45.900  INFO 13304 --- [           main] c.a.n.c.c.i.CacheData                    : [fixed-127.0.0.1_8848] [add-listener] ok, tenant=, dataId=flash-chat-web-auth, group=DEFAULT_GROUP, cnt=1
+[flash-chat-web-auth,dev] 2026-06-28 13:31:45.901  INFO 13304 --- [           main] c.a.c.n.r.NacosContextRefresher          : [Nacos Config] Listening config: dataId=flash-chat-web-auth, group=DEFAULT_GROUP
+[flash-chat-web-auth,dev] 2026-06-28 13:31:45.901  INFO 13304 --- [           main] c.a.n.c.c.i.ClientWorker                 : [fixed-127.0.0.1_8848] [subscribe] flash-chat-web-auth-dev.yaml+DEFAULT_GROUP
+[flash-chat-web-auth,dev] 2026-06-28 13:31:45.902  INFO 13304 --- [           main] c.a.n.c.c.i.CacheData                    : [fixed-127.0.0.1_8848] [add-listener] ok, tenant=, dataId=flash-chat-web-auth-dev.yaml, group=DEFAULT_GROUP, cnt=1
+[flash-chat-web-auth,dev] 2026-06-28 13:31:45.902  INFO 13304 --- [           main] c.a.c.n.r.NacosContextRefresher          : [Nacos Config] Listening config: dataId=flash-chat-web-auth-dev.yaml, group=DEFAULT_GROUP
+[flash-chat-web-auth,dev] 2026-06-28 13:31:45.902  INFO 13304 --- [           main] c.a.n.c.c.i.ClientWorker                 : [fixed-127.0.0.1_8848] [subscribe] flash-chat-web-auth.yaml+DEFAULT_GROUP
+[flash-chat-web-auth,dev] 2026-06-28 13:31:45.902  INFO 13304 --- [           main] c.a.n.c.c.i.CacheData                    : [fixed-127.0.0.1_8848] [add-listener] ok, tenant=, dataId=flash-chat-web-auth.yaml, group=DEFAULT_GROUP, cnt=1
+[flash-chat-web-auth,dev] 2026-06-28 13:31:45.902  INFO 13304 --- [           main] c.a.c.n.r.NacosContextRefresher          : [Nacos Config] Listening config: dataId=flash-chat-web-auth.yaml, group=DEFAULT_GROUP
+[flash-chat-web-auth,dev] 2026-06-28 13:33:12.127  INFO 13304 --- [nio-8890-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+[flash-chat-web-auth,dev] 2026-06-28 13:33:12.127  INFO 13304 --- [nio-8890-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+[flash-chat-web-auth,dev] 2026-06-28 13:33:12.128  INFO 13304 --- [nio-8890-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 0 ms
+[flash-chat-web-auth,dev] 2026-06-28 13:33:12.376  INFO 13304 --- [nio-8890-exec-1] i.g.z.c.a.l.a.ApiOperationLogAspect      : 请求开始：[短信发送验证码]，入参："13800138000",[ServletRequestomitted:org.apache.catalina.connector.RequestFacade]，请求类：AuthController，请求方法：sendSms
+[flash-chat-web-auth,dev] 2026-06-28 13:33:12.438  INFO 13304 --- [nio-8890-exec-1] i.g.z.c.a.l.a.ApiOperationLogAspect      : 请求结束：[短信发送验证码]，耗时：13ms，返回结果：{"success":true}
+[flash-chat-web-auth,dev] 2026-06-28 13:33:12.633 ERROR 13304 --- [         task-1] i.g.z.a.s.i.SMSServiceImpl               : 短信发送失败，手机号：13800138000，验证码：595915
+
+com.tencentcloudapi.common.exception.TencentCloudSDKException: The SecretId is not found, please ensure that your SecretId is correct.
+	at com.tencentcloudapi.common.AbstractClient.internalRequest(AbstractClient.java:386)
+	at com.tencentcloudapi.sms.v20210111.SmsClient.SendSms(SmsClient.java:382)
+	at io.github.zh.auth.utils.sms.SendSmsUtil.sendSms(SendSmsUtil.java:118)
+	at io.github.zh.auth.service.impl.SMSServiceImpl.sendSms(SMSServiceImpl.java:25)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:351)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:113)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[flash-chat-web-auth,dev] 2026-06-28 13:36:26.196  INFO 13304 --- [nio-8890-exec-3] i.g.z.a.i.SMSInterceptor                 : ip:0:0:0:0:0:0:0:1已存在
+[flash-chat-web-auth,dev] 2026-06-28 13:36:26.198  WARN 13304 --- [nio-8890-exec-3] i.g.z.a.e.GlobalExceptionHandler         : /auth/sendSms request fail,errorCode:auth-10003,errorMessage:短信发送频繁
+[flash-chat-web-auth,dev] 2026-06-28 13:36:47.063  INFO 13304 --- [or-127.0.0.1-80] c.a.n.c.r.client                         : [086f0d20-d667-4b52-8ed1-b5273ad06030_config-0] Receive server push request, request = ConfigChangeNotifyRequest, requestId = 39
+[flash-chat-web-auth,dev] 2026-06-28 13:36:47.064  INFO 13304 --- [or-127.0.0.1-80] c.a.n.c.c.i.ClientWorker                 : [086f0d20-d667-4b52-8ed1-b5273ad06030_config-0] [server-push] config changed. dataId=flash-chat-web-auth-dev.yaml, group=DEFAULT_GROUP,tenant=null
+[flash-chat-web-auth,dev] 2026-06-28 13:36:47.064  INFO 13304 --- [or-127.0.0.1-80] c.a.n.c.r.client                         : [086f0d20-d667-4b52-8ed1-b5273ad06030_config-0] Ack server push request, request = ConfigChangeNotifyRequest, requestId = 39
+[flash-chat-web-auth,dev] 2026-06-28 13:36:47.085  INFO 13304 --- [listener.task-0] c.a.n.c.c.i.ClientWorker                 : [fixed-127.0.0.1_8848] [data-received] dataId=flash-chat-web-auth-dev.yaml, group=DEFAULT_GROUP, tenant=, md5=52edbae32aef51ebae61c16769d50968, content=server:
+  port: 8890
+spring:
+  data:
+    redis:
+      host: 127.0.0.1
+      port: 6379
+      databas..., type=text
+[flash-chat-web-auth,dev] 2026-06-28 13:36:47.087  INFO 13304 --- [listener.task-0] c.a.n.c.c.i.CacheData                    : [fixed-127.0.0.1_8848] [notify-listener] task execute in nacos thread, dataId=flash-chat-web-auth-dev.yaml, group=DEFAULT_GROUP,tenant=, md5=52edbae32aef51ebae61c16769d50968, listener=com.alibaba.cloud.nacos.refresh.NacosContextRefresher$1@580bc751 
+[flash-chat-web-auth,dev] 2026-06-28 13:36:47.095  INFO 13304 --- [listener.task-0] c.a.n.c.c.i.CacheData                    : [fixed-127.0.0.1_8848] [notify-context] dataId=flash-chat-web-auth-dev.yaml, group=DEFAULT_GROUP,tenant=, md5=52edbae32aef51ebae61c16769d50968
+[flash-chat-web-auth,dev] 2026-06-28 13:36:48.302  INFO 13304 --- [listener.task-0] o.s.c.c.u.InetUtils                      : Cannot determine local hostname
+[flash-chat-web-auth,dev] 2026-06-28 13:36:48.312  INFO 13304 --- [listener.task-0] c.a.c.n.c.NacosConfigDataLoader          : [Nacos Config] Load config[dataId=flash-chat-web-auth-dev.yaml, group=DEFAULT_GROUP] success
+[flash-chat-web-auth,dev] 2026-06-28 13:36:48.342  WARN 13304 --- [listener.task-0] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[null.yaml] & group[DEFAULT_GROUP]
+[flash-chat-web-auth,dev] 2026-06-28 13:36:48.346  WARN 13304 --- [listener.task-0] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[null-dev.yaml] & group[DEFAULT_GROUP]
+[flash-chat-web-auth,dev] 2026-06-28 13:36:48.347  INFO 13304 --- [listener.task-0] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-null-dev.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-null.yaml,DEFAULT_GROUP'}]
+[flash-chat-web-auth,dev] 2026-06-28 14:04:29.485  WARN 30064 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-auth] & group[DEFAULT_GROUP]
+[flash-chat-web-auth,dev] 2026-06-28 14:04:29.491  WARN 30064 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-auth.yaml] & group[DEFAULT_GROUP]
+[flash-chat-web-auth,dev] 2026-06-28 14:04:29.502  INFO 30064 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-flash-chat-web-auth-dev.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-flash-chat-web-auth.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-flash-chat-web-auth,DEFAULT_GROUP'}]
+[flash-chat-web-auth,dev] 2026-06-28 14:04:29.520  INFO 30064 --- [           main] i.g.z.a.AuthApplication                  : The following 1 profile is active: "dev"
+[flash-chat-web-auth,dev] 2026-06-28 14:04:29.527  INFO 30064 --- [           main] c.a.c.n.c.NacosConfigDataLoader          : [Nacos Config] Load config[dataId=flash-chat-web-auth-dev.yaml, group=DEFAULT_GROUP] success
+[flash-chat-web-auth,dev] 2026-06-28 14:04:29.804  INFO 30064 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+[flash-chat-web-auth,dev] 2026-06-28 14:04:29.805  INFO 30064 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[flash-chat-web-auth,dev] 2026-06-28 14:04:29.816  INFO 30064 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+[flash-chat-web-auth,dev] 2026-06-28 14:04:29.914  INFO 30064 --- [           main] o.s.c.c.s.GenericScope                   : BeanFactory id=757d3744-0e09-3ac3-bb15-e7a8db7f2f18
+[flash-chat-web-auth,dev] 2026-06-28 14:04:30.208  INFO 30064 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8890 (http)
+[flash-chat-web-auth,dev] 2026-06-28 14:04:30.209  INFO 30064 --- [           main] o.a.c.c.AprLifecycleListener             : An older version [1.2.35] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [2.0.5]
+[flash-chat-web-auth,dev] 2026-06-28 14:04:30.210  INFO 30064 --- [           main] o.a.c.c.AprLifecycleListener             : Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+[flash-chat-web-auth,dev] 2026-06-28 14:04:30.211  INFO 30064 --- [           main] o.a.c.c.AprLifecycleListener             : OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+[flash-chat-web-auth,dev] 2026-06-28 14:04:30.216  INFO 30064 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8890"]
+[flash-chat-web-auth,dev] 2026-06-28 14:04:30.217  INFO 30064 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+[flash-chat-web-auth,dev] 2026-06-28 14:04:30.217  INFO 30064 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.19]
+[flash-chat-web-auth,dev] 2026-06-28 14:04:30.247  INFO 30064 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+[flash-chat-web-auth,dev] 2026-06-28 14:04:30.247  INFO 30064 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 720 ms
+[flash-chat-web-auth,dev] 2026-06-28 14:04:31.800  INFO 30064 --- [           main] o.s.c.c.u.InetUtils                      : Cannot determine local hostname
+[flash-chat-web-auth,dev] 2026-06-28 14:04:32.950  INFO 30064 --- [           main] o.s.c.c.u.InetUtils                      : Cannot determine local hostname
+[flash-chat-web-auth,dev] 2026-06-28 14:04:32.969  INFO 30064 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8890"]
+[flash-chat-web-auth,dev] 2026-06-28 14:04:32.976  INFO 30064 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8890 (http) with context path ''
+[flash-chat-web-auth,dev] 2026-06-28 14:04:32.979  INFO 30064 --- [           main] c.a.n.c.naming                           : initializer namespace from ans.namespace attribute : null
+[flash-chat-web-auth,dev] 2026-06-28 14:04:32.980  INFO 30064 --- [           main] c.a.n.c.naming                           : initializer namespace from ALIBABA_ALIWARE_NAMESPACE attribute :null
+[flash-chat-web-auth,dev] 2026-06-28 14:04:32.981  INFO 30064 --- [           main] c.a.n.c.naming                           : initializer namespace from namespace attribute :null
+[flash-chat-web-auth,dev] 2026-06-28 14:04:32.985  INFO 30064 --- [           main] c.a.n.c.naming                           : FailoverDataSource type is class com.alibaba.nacos.client.naming.backups.datasource.DiskFailoverDataSource
+[flash-chat-web-auth,dev] 2026-06-28 14:04:32.987  INFO 30064 --- [           main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+[flash-chat-web-auth,dev] 2026-06-28 14:04:32.987  INFO 30064 --- [           main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+[flash-chat-web-auth,dev] 2026-06-28 14:04:32.990  INFO 30064 --- [           main] c.a.n.c.r.client                         : [RpcClientFactory] create a new rpc client of b5d2e5d7-f669-4150-a370-df11a27f2a61
+[flash-chat-web-auth,dev] 2026-06-28 14:04:32.991  INFO 30064 --- [           main] c.a.n.c.naming                           : Create naming rpc client for uuid->b5d2e5d7-f669-4150-a370-df11a27f2a61
+[flash-chat-web-auth,dev] 2026-06-28 14:04:32.991  INFO 30064 --- [           main] c.a.n.c.r.client                         : [b5d2e5d7-f669-4150-a370-df11a27f2a61] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+[flash-chat-web-auth,dev] 2026-06-28 14:04:32.991  INFO 30064 --- [           main] c.a.n.c.r.client                         : [b5d2e5d7-f669-4150-a370-df11a27f2a61] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+[flash-chat-web-auth,dev] 2026-06-28 14:04:32.992  INFO 30064 --- [           main] c.a.n.c.r.client                         : [b5d2e5d7-f669-4150-a370-df11a27f2a61] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+[flash-chat-web-auth,dev] 2026-06-28 14:04:32.993  INFO 30064 --- [           main] c.a.n.c.r.client                         : [b5d2e5d7-f669-4150-a370-df11a27f2a61] Try to connect to server on start up, server: {serverIp = '127.0.0.1', server main port = 8848}
+[flash-chat-web-auth,dev] 2026-06-28 14:04:32.993  INFO 30064 --- [           main] c.a.n.c.r.c.g.GrpcClient                 : grpc client connection server:127.0.0.1 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+[flash-chat-web-auth,dev] 2026-06-28 14:04:33.011  INFO 30064 --- [           main] c.a.n.c.r.client                         : [b5d2e5d7-f669-4150-a370-df11a27f2a61] Success to connect to server [127.0.0.1:8848] on start up, connectionId = 1782626672998_172.17.0.1_51642
+[flash-chat-web-auth,dev] 2026-06-28 14:04:33.011  INFO 30064 --- [           main] c.a.n.c.r.client                         : [b5d2e5d7-f669-4150-a370-df11a27f2a61] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+[flash-chat-web-auth,dev] 2026-06-28 14:04:33.011  INFO 30064 --- [remote.worker.0] c.a.n.c.r.client                         : [b5d2e5d7-f669-4150-a370-df11a27f2a61] Notify connected event to listeners.
+[flash-chat-web-auth,dev] 2026-06-28 14:04:33.011  INFO 30064 --- [           main] c.a.n.c.r.client                         : [b5d2e5d7-f669-4150-a370-df11a27f2a61] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda/0x00000194be352940
+[flash-chat-web-auth,dev] 2026-06-28 14:04:33.011  INFO 30064 --- [remote.worker.0] c.a.n.c.naming                           : Grpc connection connect
+[flash-chat-web-auth,dev] 2026-06-28 14:04:33.012  INFO 30064 --- [           main] c.a.n.c.naming                           : [REGISTER-SERVICE] public registering service flash-chat-web-auth with instance Instance{instanceId='null', ip='192.168.10.1', port=8890, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={IPv6=null, preserved.register.source=SPRING_CLOUD}}
+[flash-chat-web-auth,dev] 2026-06-28 14:04:33.022  INFO 30064 --- [           main] c.a.c.n.r.NacosServiceRegistry           : nacos registry, DEFAULT_GROUP flash-chat-web-auth 192.168.10.1:8890 register finished
+[flash-chat-web-auth,dev] 2026-06-28 14:04:34.040  INFO 30064 --- [           main] o.s.c.c.u.InetUtils                      : Cannot determine local hostname
+[flash-chat-web-auth,dev] 2026-06-28 14:04:34.045  INFO 30064 --- [           main] i.g.z.a.AuthApplication                  : Started AuthApplication in 7.727 seconds (process running for 7.964)
+[flash-chat-web-auth,dev] 2026-06-28 14:04:34.048  INFO 30064 --- [           main] c.a.n.c.c.i.CacheData                    : config listener notify warn timeout millis use default 60000 millis 
+[flash-chat-web-auth,dev] 2026-06-28 14:04:34.048  INFO 30064 --- [           main] c.a.n.c.c.i.CacheData                    : nacos.cache.data.init.snapshot = true 
+[flash-chat-web-auth,dev] 2026-06-28 14:04:34.049  INFO 30064 --- [           main] c.a.n.c.c.i.ClientWorker                 : [fixed-127.0.0.1_8848] [subscribe] flash-chat-web-auth+DEFAULT_GROUP
+[flash-chat-web-auth,dev] 2026-06-28 14:04:34.053  INFO 30064 --- [           main] c.a.n.c.c.i.CacheData                    : [fixed-127.0.0.1_8848] [add-listener] ok, tenant=, dataId=flash-chat-web-auth, group=DEFAULT_GROUP, cnt=1
+[flash-chat-web-auth,dev] 2026-06-28 14:04:34.053  INFO 30064 --- [           main] c.a.c.n.r.NacosContextRefresher          : [Nacos Config] Listening config: dataId=flash-chat-web-auth, group=DEFAULT_GROUP
+[flash-chat-web-auth,dev] 2026-06-28 14:04:34.056  INFO 30064 --- [           main] c.a.n.c.c.i.ClientWorker                 : [fixed-127.0.0.1_8848] [subscribe] flash-chat-web-auth-dev.yaml+DEFAULT_GROUP
+[flash-chat-web-auth,dev] 2026-06-28 14:04:34.057  INFO 30064 --- [           main] c.a.n.c.c.i.CacheData                    : [fixed-127.0.0.1_8848] [add-listener] ok, tenant=, dataId=flash-chat-web-auth-dev.yaml, group=DEFAULT_GROUP, cnt=1
+[flash-chat-web-auth,dev] 2026-06-28 14:04:34.057  INFO 30064 --- [           main] c.a.c.n.r.NacosContextRefresher          : [Nacos Config] Listening config: dataId=flash-chat-web-auth-dev.yaml, group=DEFAULT_GROUP
+[flash-chat-web-auth,dev] 2026-06-28 14:04:34.057  INFO 30064 --- [           main] c.a.n.c.c.i.ClientWorker                 : [fixed-127.0.0.1_8848] [subscribe] flash-chat-web-auth.yaml+DEFAULT_GROUP
+[flash-chat-web-auth,dev] 2026-06-28 14:04:34.057  INFO 30064 --- [           main] c.a.n.c.c.i.CacheData                    : [fixed-127.0.0.1_8848] [add-listener] ok, tenant=, dataId=flash-chat-web-auth.yaml, group=DEFAULT_GROUP, cnt=1
+[flash-chat-web-auth,dev] 2026-06-28 14:04:34.057  INFO 30064 --- [           main] c.a.c.n.r.NacosContextRefresher          : [Nacos Config] Listening config: dataId=flash-chat-web-auth.yaml, group=DEFAULT_GROUP
+[flash-chat-web-auth,dev] 2026-06-28 14:05:13.654  WARN 34272 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-auth] & group[DEFAULT_GROUP]
+[flash-chat-web-auth,dev] 2026-06-28 14:05:13.660  WARN 34272 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-auth.yaml] & group[DEFAULT_GROUP]
+[flash-chat-web-auth,dev] 2026-06-28 14:05:13.670  INFO 34272 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-flash-chat-web-auth-dev.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-flash-chat-web-auth.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-flash-chat-web-auth,DEFAULT_GROUP'}]
+[flash-chat-web-auth,dev] 2026-06-28 14:05:13.688  INFO 34272 --- [           main] i.g.z.a.AuthApplication                  : The following 1 profile is active: "dev"
+[flash-chat-web-auth,dev] 2026-06-28 14:05:13.695  INFO 34272 --- [           main] c.a.c.n.c.NacosConfigDataLoader          : [Nacos Config] Load config[dataId=flash-chat-web-auth-dev.yaml, group=DEFAULT_GROUP] success
+[flash-chat-web-auth,dev] 2026-06-28 14:05:13.951  INFO 34272 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+[flash-chat-web-auth,dev] 2026-06-28 14:05:13.953  INFO 34272 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[flash-chat-web-auth,dev] 2026-06-28 14:05:13.964  INFO 34272 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+[flash-chat-web-auth,dev] 2026-06-28 14:05:14.071  INFO 34272 --- [           main] o.s.c.c.s.GenericScope                   : BeanFactory id=757d3744-0e09-3ac3-bb15-e7a8db7f2f18
+[flash-chat-web-auth,dev] 2026-06-28 14:05:14.376  INFO 34272 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8890 (http)
+[flash-chat-web-auth,dev] 2026-06-28 14:05:14.378  INFO 34272 --- [           main] o.a.c.c.AprLifecycleListener             : An older version [1.2.35] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [2.0.5]
+[flash-chat-web-auth,dev] 2026-06-28 14:05:14.378  INFO 34272 --- [           main] o.a.c.c.AprLifecycleListener             : Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+[flash-chat-web-auth,dev] 2026-06-28 14:05:14.380  INFO 34272 --- [           main] o.a.c.c.AprLifecycleListener             : OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+[flash-chat-web-auth,dev] 2026-06-28 14:05:14.384  INFO 34272 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8890"]
+[flash-chat-web-auth,dev] 2026-06-28 14:05:14.385  INFO 34272 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+[flash-chat-web-auth,dev] 2026-06-28 14:05:14.385  INFO 34272 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.19]
+[flash-chat-web-auth,dev] 2026-06-28 14:05:14.417  INFO 34272 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+[flash-chat-web-auth,dev] 2026-06-28 14:05:14.417  INFO 34272 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 722 ms
+[flash-chat-web-auth,dev] 2026-06-28 14:05:15.936  INFO 34272 --- [           main] o.s.c.c.u.InetUtils                      : Cannot determine local hostname
+[flash-chat-web-auth,dev] 2026-06-28 14:05:17.078  INFO 34272 --- [           main] o.s.c.c.u.InetUtils                      : Cannot determine local hostname
+[flash-chat-web-auth,dev] 2026-06-28 14:05:17.096  INFO 34272 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8890"]
+[flash-chat-web-auth,dev] 2026-06-28 14:05:17.101  WARN 34272 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+[flash-chat-web-auth,dev] 2026-06-28 14:05:17.103  INFO 34272 --- [           main] c.a.d.p.DruidDataSource                  : {dataSource-0} closing ...
+[flash-chat-web-auth,dev] 2026-06-28 14:05:17.107  INFO 34272 --- [           main] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+[flash-chat-web-auth,dev] 2026-06-28 14:05:17.163  INFO 34272 --- [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[flash-chat-web-auth,dev] 2026-06-28 14:05:17.171 ERROR 34272 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8890 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8890 or configure this application to listen on another port.
+
+[flash-chat-web-auth,dev] 2026-06-28 14:05:18.120  WARN 34272 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Start destroying common HttpClient
+[flash-chat-web-auth,dev] 2026-06-28 14:05:18.120  WARN 34272 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Start destroying Publisher
+[flash-chat-web-auth,dev] 2026-06-28 14:05:18.120  WARN 34272 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 14:05:18.122  WARN 34272 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 14:05:34.672  WARN 27976 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-auth] & group[DEFAULT_GROUP]
+[flash-chat-web-auth,dev] 2026-06-28 14:05:34.677  WARN 27976 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-auth.yaml] & group[DEFAULT_GROUP]
+[flash-chat-web-auth,dev] 2026-06-28 14:05:34.689  INFO 27976 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-flash-chat-web-auth-dev.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-flash-chat-web-auth.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-flash-chat-web-auth,DEFAULT_GROUP'}]
+[flash-chat-web-auth,dev] 2026-06-28 14:05:34.706  INFO 27976 --- [           main] i.g.z.a.AuthApplication                  : The following 1 profile is active: "dev"
+[flash-chat-web-auth,dev] 2026-06-28 14:05:34.713  INFO 27976 --- [           main] c.a.c.n.c.NacosConfigDataLoader          : [Nacos Config] Load config[dataId=flash-chat-web-auth-dev.yaml, group=DEFAULT_GROUP] success
+[flash-chat-web-auth,dev] 2026-06-28 14:05:34.967  INFO 27976 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+[flash-chat-web-auth,dev] 2026-06-28 14:05:34.968  INFO 27976 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[flash-chat-web-auth,dev] 2026-06-28 14:05:34.979  INFO 27976 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+[flash-chat-web-auth,dev] 2026-06-28 14:05:35.070  INFO 27976 --- [           main] o.s.c.c.s.GenericScope                   : BeanFactory id=757d3744-0e09-3ac3-bb15-e7a8db7f2f18
+[flash-chat-web-auth,dev] 2026-06-28 14:05:35.394  INFO 27976 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8890 (http)
+[flash-chat-web-auth,dev] 2026-06-28 14:05:35.397  INFO 27976 --- [           main] o.a.c.c.AprLifecycleListener             : An older version [1.2.35] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [2.0.5]
+[flash-chat-web-auth,dev] 2026-06-28 14:05:35.397  INFO 27976 --- [           main] o.a.c.c.AprLifecycleListener             : Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+[flash-chat-web-auth,dev] 2026-06-28 14:05:35.399  INFO 27976 --- [           main] o.a.c.c.AprLifecycleListener             : OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+[flash-chat-web-auth,dev] 2026-06-28 14:05:35.403  INFO 27976 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8890"]
+[flash-chat-web-auth,dev] 2026-06-28 14:05:35.404  INFO 27976 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+[flash-chat-web-auth,dev] 2026-06-28 14:05:35.404  INFO 27976 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.19]
+[flash-chat-web-auth,dev] 2026-06-28 14:05:35.442  INFO 27976 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+[flash-chat-web-auth,dev] 2026-06-28 14:05:35.443  INFO 27976 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 729 ms
+[flash-chat-web-auth,dev] 2026-06-28 14:05:36.968  INFO 27976 --- [           main] o.s.c.c.u.InetUtils                      : Cannot determine local hostname
+[flash-chat-web-auth,dev] 2026-06-28 14:05:38.107  INFO 27976 --- [           main] o.s.c.c.u.InetUtils                      : Cannot determine local hostname
+[flash-chat-web-auth,dev] 2026-06-28 14:05:38.123  INFO 27976 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8890"]
+[flash-chat-web-auth,dev] 2026-06-28 14:05:38.129  INFO 27976 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8890 (http) with context path ''
+[flash-chat-web-auth,dev] 2026-06-28 14:05:38.132  INFO 27976 --- [           main] c.a.n.c.naming                           : initializer namespace from ans.namespace attribute : null
+[flash-chat-web-auth,dev] 2026-06-28 14:05:38.133  INFO 27976 --- [           main] c.a.n.c.naming                           : initializer namespace from ALIBABA_ALIWARE_NAMESPACE attribute :null
+[flash-chat-web-auth,dev] 2026-06-28 14:05:38.133  INFO 27976 --- [           main] c.a.n.c.naming                           : initializer namespace from namespace attribute :null
+[flash-chat-web-auth,dev] 2026-06-28 14:05:38.138  INFO 27976 --- [           main] c.a.n.c.naming                           : FailoverDataSource type is class com.alibaba.nacos.client.naming.backups.datasource.DiskFailoverDataSource
+[flash-chat-web-auth,dev] 2026-06-28 14:05:38.142  INFO 27976 --- [           main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+[flash-chat-web-auth,dev] 2026-06-28 14:05:38.142  INFO 27976 --- [           main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+[flash-chat-web-auth,dev] 2026-06-28 14:05:38.144  INFO 27976 --- [           main] c.a.n.c.r.client                         : [RpcClientFactory] create a new rpc client of 2adcb07d-4d69-4b23-83b0-c63b4cb8a311
+[flash-chat-web-auth,dev] 2026-06-28 14:05:38.146  INFO 27976 --- [           main] c.a.n.c.naming                           : Create naming rpc client for uuid->2adcb07d-4d69-4b23-83b0-c63b4cb8a311
+[flash-chat-web-auth,dev] 2026-06-28 14:05:38.146  INFO 27976 --- [           main] c.a.n.c.r.client                         : [2adcb07d-4d69-4b23-83b0-c63b4cb8a311] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+[flash-chat-web-auth,dev] 2026-06-28 14:05:38.146  INFO 27976 --- [           main] c.a.n.c.r.client                         : [2adcb07d-4d69-4b23-83b0-c63b4cb8a311] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+[flash-chat-web-auth,dev] 2026-06-28 14:05:38.146  INFO 27976 --- [           main] c.a.n.c.r.client                         : [2adcb07d-4d69-4b23-83b0-c63b4cb8a311] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+[flash-chat-web-auth,dev] 2026-06-28 14:05:38.147  INFO 27976 --- [           main] c.a.n.c.r.client                         : [2adcb07d-4d69-4b23-83b0-c63b4cb8a311] Try to connect to server on start up, server: {serverIp = '127.0.0.1', server main port = 8848}
+[flash-chat-web-auth,dev] 2026-06-28 14:05:38.147  INFO 27976 --- [           main] c.a.n.c.r.c.g.GrpcClient                 : grpc client connection server:127.0.0.1 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+[flash-chat-web-auth,dev] 2026-06-28 14:05:38.159  INFO 27976 --- [           main] c.a.n.c.r.client                         : [2adcb07d-4d69-4b23-83b0-c63b4cb8a311] Success to connect to server [127.0.0.1:8848] on start up, connectionId = 1782626738151_172.17.0.1_33904
+[flash-chat-web-auth,dev] 2026-06-28 14:05:38.160  INFO 27976 --- [           main] c.a.n.c.r.client                         : [2adcb07d-4d69-4b23-83b0-c63b4cb8a311] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+[flash-chat-web-auth,dev] 2026-06-28 14:05:38.160  INFO 27976 --- [           main] c.a.n.c.r.client                         : [2adcb07d-4d69-4b23-83b0-c63b4cb8a311] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda/0x00000183c0352d30
+[flash-chat-web-auth,dev] 2026-06-28 14:05:38.160  INFO 27976 --- [remote.worker.0] c.a.n.c.r.client                         : [2adcb07d-4d69-4b23-83b0-c63b4cb8a311] Notify connected event to listeners.
+[flash-chat-web-auth,dev] 2026-06-28 14:05:38.160  INFO 27976 --- [remote.worker.0] c.a.n.c.naming                           : Grpc connection connect
+[flash-chat-web-auth,dev] 2026-06-28 14:05:38.160  INFO 27976 --- [           main] c.a.n.c.naming                           : [REGISTER-SERVICE] public registering service flash-chat-web-auth with instance Instance{instanceId='null', ip='192.168.10.1', port=8890, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={IPv6=null, preserved.register.source=SPRING_CLOUD}}
+[flash-chat-web-auth,dev] 2026-06-28 14:05:38.169  INFO 27976 --- [           main] c.a.c.n.r.NacosServiceRegistry           : nacos registry, DEFAULT_GROUP flash-chat-web-auth 192.168.10.1:8890 register finished
+[flash-chat-web-auth,dev] 2026-06-28 14:05:39.179  INFO 27976 --- [           main] o.s.c.c.u.InetUtils                      : Cannot determine local hostname
+[flash-chat-web-auth,dev] 2026-06-28 14:05:39.185  INFO 27976 --- [           main] i.g.z.a.AuthApplication                  : Started AuthApplication in 7.586 seconds (process running for 7.812)
+[flash-chat-web-auth,dev] 2026-06-28 14:05:39.187  INFO 27976 --- [           main] c.a.n.c.c.i.CacheData                    : config listener notify warn timeout millis use default 60000 millis 
+[flash-chat-web-auth,dev] 2026-06-28 14:05:39.188  INFO 27976 --- [           main] c.a.n.c.c.i.CacheData                    : nacos.cache.data.init.snapshot = true 
+[flash-chat-web-auth,dev] 2026-06-28 14:05:39.188  INFO 27976 --- [           main] c.a.n.c.c.i.ClientWorker                 : [fixed-127.0.0.1_8848] [subscribe] flash-chat-web-auth+DEFAULT_GROUP
+[flash-chat-web-auth,dev] 2026-06-28 14:05:39.192  INFO 27976 --- [           main] c.a.n.c.c.i.CacheData                    : [fixed-127.0.0.1_8848] [add-listener] ok, tenant=, dataId=flash-chat-web-auth, group=DEFAULT_GROUP, cnt=1
+[flash-chat-web-auth,dev] 2026-06-28 14:05:39.192  INFO 27976 --- [           main] c.a.c.n.r.NacosContextRefresher          : [Nacos Config] Listening config: dataId=flash-chat-web-auth, group=DEFAULT_GROUP
+[flash-chat-web-auth,dev] 2026-06-28 14:05:39.195  INFO 27976 --- [           main] c.a.n.c.c.i.ClientWorker                 : [fixed-127.0.0.1_8848] [subscribe] flash-chat-web-auth-dev.yaml+DEFAULT_GROUP
+[flash-chat-web-auth,dev] 2026-06-28 14:05:39.195  INFO 27976 --- [           main] c.a.n.c.c.i.CacheData                    : [fixed-127.0.0.1_8848] [add-listener] ok, tenant=, dataId=flash-chat-web-auth-dev.yaml, group=DEFAULT_GROUP, cnt=1
+[flash-chat-web-auth,dev] 2026-06-28 14:05:39.195  INFO 27976 --- [           main] c.a.c.n.r.NacosContextRefresher          : [Nacos Config] Listening config: dataId=flash-chat-web-auth-dev.yaml, group=DEFAULT_GROUP
+[flash-chat-web-auth,dev] 2026-06-28 14:05:39.195  INFO 27976 --- [           main] c.a.n.c.c.i.ClientWorker                 : [fixed-127.0.0.1_8848] [subscribe] flash-chat-web-auth.yaml+DEFAULT_GROUP
+[flash-chat-web-auth,dev] 2026-06-28 14:05:39.196  INFO 27976 --- [           main] c.a.n.c.c.i.CacheData                    : [fixed-127.0.0.1_8848] [add-listener] ok, tenant=, dataId=flash-chat-web-auth.yaml, group=DEFAULT_GROUP, cnt=1
+[flash-chat-web-auth,dev] 2026-06-28 14:05:39.196  INFO 27976 --- [           main] c.a.c.n.r.NacosContextRefresher          : [Nacos Config] Listening config: dataId=flash-chat-web-auth.yaml, group=DEFAULT_GROUP
+[flash-chat-web-auth,dev] 2026-06-28 14:06:18.162  WARN 36684 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-auth] & group[DEFAULT_GROUP]
+[flash-chat-web-auth,dev] 2026-06-28 14:06:18.170  WARN 36684 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-auth.yaml] & group[DEFAULT_GROUP]
+[flash-chat-web-auth,dev] 2026-06-28 14:06:18.182  INFO 36684 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-flash-chat-web-auth-dev.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-flash-chat-web-auth.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-flash-chat-web-auth,DEFAULT_GROUP'}]
+[flash-chat-web-auth,dev] 2026-06-28 14:06:18.200  INFO 36684 --- [           main] i.g.z.a.AuthApplication                  : The following 1 profile is active: "dev"
+[flash-chat-web-auth,dev] 2026-06-28 14:06:18.206  INFO 36684 --- [           main] c.a.c.n.c.NacosConfigDataLoader          : [Nacos Config] Load config[dataId=flash-chat-web-auth-dev.yaml, group=DEFAULT_GROUP] success
+[flash-chat-web-auth,dev] 2026-06-28 14:06:18.516  INFO 36684 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+[flash-chat-web-auth,dev] 2026-06-28 14:06:18.518  INFO 36684 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[flash-chat-web-auth,dev] 2026-06-28 14:06:18.528  INFO 36684 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+[flash-chat-web-auth,dev] 2026-06-28 14:06:18.626  INFO 36684 --- [           main] o.s.c.c.s.GenericScope                   : BeanFactory id=757d3744-0e09-3ac3-bb15-e7a8db7f2f18
+[flash-chat-web-auth,dev] 2026-06-28 14:06:18.921  INFO 36684 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8890 (http)
+[flash-chat-web-auth,dev] 2026-06-28 14:06:18.922  INFO 36684 --- [           main] o.a.c.c.AprLifecycleListener             : An older version [1.2.35] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [2.0.5]
+[flash-chat-web-auth,dev] 2026-06-28 14:06:18.922  INFO 36684 --- [           main] o.a.c.c.AprLifecycleListener             : Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+[flash-chat-web-auth,dev] 2026-06-28 14:06:18.924  INFO 36684 --- [           main] o.a.c.c.AprLifecycleListener             : OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+[flash-chat-web-auth,dev] 2026-06-28 14:06:18.928  INFO 36684 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8890"]
+[flash-chat-web-auth,dev] 2026-06-28 14:06:18.929  INFO 36684 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+[flash-chat-web-auth,dev] 2026-06-28 14:06:18.929  INFO 36684 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.19]
+[flash-chat-web-auth,dev] 2026-06-28 14:06:18.959  INFO 36684 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+[flash-chat-web-auth,dev] 2026-06-28 14:06:18.959  INFO 36684 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 752 ms
+[flash-chat-web-auth,dev] 2026-06-28 14:06:20.486  INFO 36684 --- [           main] o.s.c.c.u.InetUtils                      : Cannot determine local hostname
+[flash-chat-web-auth,dev] 2026-06-28 14:06:21.609  INFO 36684 --- [           main] o.s.c.c.u.InetUtils                      : Cannot determine local hostname
+[flash-chat-web-auth,dev] 2026-06-28 14:06:21.630  INFO 36684 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8890"]
+[flash-chat-web-auth,dev] 2026-06-28 14:06:21.643  WARN 36684 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+[flash-chat-web-auth,dev] 2026-06-28 14:06:21.643  INFO 36684 --- [           main] c.a.d.p.DruidDataSource                  : {dataSource-0} closing ...
+[flash-chat-web-auth,dev] 2026-06-28 14:06:21.655  INFO 36684 --- [           main] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+[flash-chat-web-auth,dev] 2026-06-28 14:06:21.701  INFO 36684 --- [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[flash-chat-web-auth,dev] 2026-06-28 14:06:21.709 ERROR 36684 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8890 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8890 or configure this application to listen on another port.
+
+[flash-chat-web-auth,dev] 2026-06-28 14:06:22.656  WARN 36684 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Start destroying common HttpClient
+[flash-chat-web-auth,dev] 2026-06-28 14:06:22.656  WARN 36684 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Start destroying Publisher
+[flash-chat-web-auth,dev] 2026-06-28 14:06:22.656  WARN 36684 --- [       Thread-3] c.a.n.c.n.NotifyCenter                   : [NotifyCenter] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 14:06:22.657  WARN 36684 --- [       Thread-1] c.a.n.c.h.HttpClientBeanHolder           : [HttpClientBeanHolder] Destruction of the end
+[flash-chat-web-auth,dev] 2026-06-28 14:06:54.617  WARN 26408 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-auth] & group[DEFAULT_GROUP]
+[flash-chat-web-auth,dev] 2026-06-28 14:06:54.623  WARN 26408 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-auth.yaml] & group[DEFAULT_GROUP]
+[flash-chat-web-auth,dev] 2026-06-28 14:06:54.636  INFO 26408 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-flash-chat-web-auth-dev.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-flash-chat-web-auth.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-flash-chat-web-auth,DEFAULT_GROUP'}]
+[flash-chat-web-auth,dev] 2026-06-28 14:06:54.654  INFO 26408 --- [           main] i.g.z.a.AuthApplication                  : The following 1 profile is active: "dev"
+[flash-chat-web-auth,dev] 2026-06-28 14:06:54.660  INFO 26408 --- [           main] c.a.c.n.c.NacosConfigDataLoader          : [Nacos Config] Load config[dataId=flash-chat-web-auth-dev.yaml, group=DEFAULT_GROUP] success
+[flash-chat-web-auth,dev] 2026-06-28 14:06:54.909  INFO 26408 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+[flash-chat-web-auth,dev] 2026-06-28 14:06:54.911  INFO 26408 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[flash-chat-web-auth,dev] 2026-06-28 14:06:54.921  INFO 26408 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+[flash-chat-web-auth,dev] 2026-06-28 14:06:55.018  INFO 26408 --- [           main] o.s.c.c.s.GenericScope                   : BeanFactory id=757d3744-0e09-3ac3-bb15-e7a8db7f2f18
+[flash-chat-web-auth,dev] 2026-06-28 14:06:55.410  INFO 26408 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8890 (http)
+[flash-chat-web-auth,dev] 2026-06-28 14:06:55.413  INFO 26408 --- [           main] o.a.c.c.AprLifecycleListener             : An older version [1.2.35] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [2.0.5]
+[flash-chat-web-auth,dev] 2026-06-28 14:06:55.413  INFO 26408 --- [           main] o.a.c.c.AprLifecycleListener             : Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+[flash-chat-web-auth,dev] 2026-06-28 14:06:55.415  INFO 26408 --- [           main] o.a.c.c.AprLifecycleListener             : OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+[flash-chat-web-auth,dev] 2026-06-28 14:06:55.420  INFO 26408 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8890"]
+[flash-chat-web-auth,dev] 2026-06-28 14:06:55.421  INFO 26408 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+[flash-chat-web-auth,dev] 2026-06-28 14:06:55.421  INFO 26408 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.19]
+[flash-chat-web-auth,dev] 2026-06-28 14:06:55.456  INFO 26408 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+[flash-chat-web-auth,dev] 2026-06-28 14:06:55.456  INFO 26408 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 796 ms
+[flash-chat-web-auth,dev] 2026-06-28 14:06:56.988  INFO 26408 --- [           main] o.s.c.c.u.InetUtils                      : Cannot determine local hostname
+[flash-chat-web-auth,dev] 2026-06-28 14:06:58.107  INFO 26408 --- [           main] o.s.c.c.u.InetUtils                      : Cannot determine local hostname
+[flash-chat-web-auth,dev] 2026-06-28 14:06:58.126  INFO 26408 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8890"]
+[flash-chat-web-auth,dev] 2026-06-28 14:06:58.133  INFO 26408 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8890 (http) with context path ''
+[flash-chat-web-auth,dev] 2026-06-28 14:06:58.137  INFO 26408 --- [           main] c.a.n.c.naming                           : initializer namespace from ans.namespace attribute : null
+[flash-chat-web-auth,dev] 2026-06-28 14:06:58.137  INFO 26408 --- [           main] c.a.n.c.naming                           : initializer namespace from ALIBABA_ALIWARE_NAMESPACE attribute :null
+[flash-chat-web-auth,dev] 2026-06-28 14:06:58.138  INFO 26408 --- [           main] c.a.n.c.naming                           : initializer namespace from namespace attribute :null
+[flash-chat-web-auth,dev] 2026-06-28 14:06:58.141  INFO 26408 --- [           main] c.a.n.c.naming                           : FailoverDataSource type is class com.alibaba.nacos.client.naming.backups.datasource.DiskFailoverDataSource
+[flash-chat-web-auth,dev] 2026-06-28 14:06:58.144  INFO 26408 --- [           main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+[flash-chat-web-auth,dev] 2026-06-28 14:06:58.144  INFO 26408 --- [           main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+[flash-chat-web-auth,dev] 2026-06-28 14:06:58.146  INFO 26408 --- [           main] c.a.n.c.r.client                         : [RpcClientFactory] create a new rpc client of a1f9ecac-6481-41d5-b20b-250c359c1857
+[flash-chat-web-auth,dev] 2026-06-28 14:06:58.148  INFO 26408 --- [           main] c.a.n.c.naming                           : Create naming rpc client for uuid->a1f9ecac-6481-41d5-b20b-250c359c1857
+[flash-chat-web-auth,dev] 2026-06-28 14:06:58.148  INFO 26408 --- [           main] c.a.n.c.r.client                         : [a1f9ecac-6481-41d5-b20b-250c359c1857] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+[flash-chat-web-auth,dev] 2026-06-28 14:06:58.148  INFO 26408 --- [           main] c.a.n.c.r.client                         : [a1f9ecac-6481-41d5-b20b-250c359c1857] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+[flash-chat-web-auth,dev] 2026-06-28 14:06:58.148  INFO 26408 --- [           main] c.a.n.c.r.client                         : [a1f9ecac-6481-41d5-b20b-250c359c1857] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+[flash-chat-web-auth,dev] 2026-06-28 14:06:58.148  INFO 26408 --- [           main] c.a.n.c.r.client                         : [a1f9ecac-6481-41d5-b20b-250c359c1857] Try to connect to server on start up, server: {serverIp = '127.0.0.1', server main port = 8848}
+[flash-chat-web-auth,dev] 2026-06-28 14:06:58.148  INFO 26408 --- [           main] c.a.n.c.r.c.g.GrpcClient                 : grpc client connection server:127.0.0.1 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+[flash-chat-web-auth,dev] 2026-06-28 14:06:58.162  INFO 26408 --- [           main] c.a.n.c.r.client                         : [a1f9ecac-6481-41d5-b20b-250c359c1857] Success to connect to server [127.0.0.1:8848] on start up, connectionId = 1782626818154_172.17.0.1_40004
+[flash-chat-web-auth,dev] 2026-06-28 14:06:58.162  INFO 26408 --- [           main] c.a.n.c.r.client                         : [a1f9ecac-6481-41d5-b20b-250c359c1857] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+[flash-chat-web-auth,dev] 2026-06-28 14:06:58.162  INFO 26408 --- [remote.worker.0] c.a.n.c.r.client                         : [a1f9ecac-6481-41d5-b20b-250c359c1857] Notify connected event to listeners.
+[flash-chat-web-auth,dev] 2026-06-28 14:06:58.162  INFO 26408 --- [           main] c.a.n.c.r.client                         : [a1f9ecac-6481-41d5-b20b-250c359c1857] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda/0x0000021801357128
+[flash-chat-web-auth,dev] 2026-06-28 14:06:58.162  INFO 26408 --- [remote.worker.0] c.a.n.c.naming                           : Grpc connection connect
+[flash-chat-web-auth,dev] 2026-06-28 14:06:58.163  INFO 26408 --- [           main] c.a.n.c.naming                           : [REGISTER-SERVICE] public registering service flash-chat-web-auth with instance Instance{instanceId='null', ip='192.168.10.1', port=8890, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={IPv6=null, preserved.register.source=SPRING_CLOUD}}
+[flash-chat-web-auth,dev] 2026-06-28 14:06:58.171  INFO 26408 --- [           main] c.a.c.n.r.NacosServiceRegistry           : nacos registry, DEFAULT_GROUP flash-chat-web-auth 192.168.10.1:8890 register finished
+[flash-chat-web-auth,dev] 2026-06-28 14:06:59.176  INFO 26408 --- [           main] o.s.c.c.u.InetUtils                      : Cannot determine local hostname
+[flash-chat-web-auth,dev] 2026-06-28 14:06:59.181  INFO 26408 --- [           main] i.g.z.a.AuthApplication                  : Started AuthApplication in 7.623 seconds (process running for 7.853)
+[flash-chat-web-auth,dev] 2026-06-28 14:06:59.184  INFO 26408 --- [           main] c.a.n.c.c.i.CacheData                    : config listener notify warn timeout millis use default 60000 millis 
+[flash-chat-web-auth,dev] 2026-06-28 14:06:59.184  INFO 26408 --- [           main] c.a.n.c.c.i.CacheData                    : nacos.cache.data.init.snapshot = true 
+[flash-chat-web-auth,dev] 2026-06-28 14:06:59.184  INFO 26408 --- [           main] c.a.n.c.c.i.ClientWorker                 : [fixed-127.0.0.1_8848] [subscribe] flash-chat-web-auth+DEFAULT_GROUP
+[flash-chat-web-auth,dev] 2026-06-28 14:06:59.188  INFO 26408 --- [           main] c.a.n.c.c.i.CacheData                    : [fixed-127.0.0.1_8848] [add-listener] ok, tenant=, dataId=flash-chat-web-auth, group=DEFAULT_GROUP, cnt=1
+[flash-chat-web-auth,dev] 2026-06-28 14:06:59.188  INFO 26408 --- [           main] c.a.c.n.r.NacosContextRefresher          : [Nacos Config] Listening config: dataId=flash-chat-web-auth, group=DEFAULT_GROUP
+[flash-chat-web-auth,dev] 2026-06-28 14:06:59.189  INFO 26408 --- [           main] c.a.n.c.c.i.ClientWorker                 : [fixed-127.0.0.1_8848] [subscribe] flash-chat-web-auth-dev.yaml+DEFAULT_GROUP
+[flash-chat-web-auth,dev] 2026-06-28 14:06:59.189  INFO 26408 --- [           main] c.a.n.c.c.i.CacheData                    : [fixed-127.0.0.1_8848] [add-listener] ok, tenant=, dataId=flash-chat-web-auth-dev.yaml, group=DEFAULT_GROUP, cnt=1
+[flash-chat-web-auth,dev] 2026-06-28 14:06:59.189  INFO 26408 --- [           main] c.a.c.n.r.NacosContextRefresher          : [Nacos Config] Listening config: dataId=flash-chat-web-auth-dev.yaml, group=DEFAULT_GROUP
+[flash-chat-web-auth,dev] 2026-06-28 14:06:59.189  INFO 26408 --- [           main] c.a.n.c.c.i.ClientWorker                 : [fixed-127.0.0.1_8848] [subscribe] flash-chat-web-auth.yaml+DEFAULT_GROUP
+[flash-chat-web-auth,dev] 2026-06-28 14:06:59.189  INFO 26408 --- [           main] c.a.n.c.c.i.CacheData                    : [fixed-127.0.0.1_8848] [add-listener] ok, tenant=, dataId=flash-chat-web-auth.yaml, group=DEFAULT_GROUP, cnt=1
+[flash-chat-web-auth,dev] 2026-06-28 14:06:59.189  INFO 26408 --- [           main] c.a.c.n.r.NacosContextRefresher          : [Nacos Config] Listening config: dataId=flash-chat-web-auth.yaml, group=DEFAULT_GROUP
+[flash-chat-web-auth,dev] 2026-06-28 14:07:44.303  WARN 30304 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-auth] & group[DEFAULT_GROUP]
+[flash-chat-web-auth,dev] 2026-06-28 14:07:44.311  WARN 30304 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-auth.yaml] & group[DEFAULT_GROUP]
+[flash-chat-web-auth,dev] 2026-06-28 14:07:44.326  INFO 30304 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-flash-chat-web-auth-dev.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-flash-chat-web-auth.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-flash-chat-web-auth,DEFAULT_GROUP'}]
+[flash-chat-web-auth,dev] 2026-06-28 14:07:44.349  INFO 30304 --- [           main] i.g.z.a.AuthApplication                  : The following 1 profile is active: "dev"
+[flash-chat-web-auth,dev] 2026-06-28 14:07:44.365  INFO 30304 --- [           main] c.a.c.n.c.NacosConfigDataLoader          : [Nacos Config] Load config[dataId=flash-chat-web-auth-dev.yaml, group=DEFAULT_GROUP] success
+[flash-chat-web-auth,dev] 2026-06-28 14:07:44.619  INFO 30304 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+[flash-chat-web-auth,dev] 2026-06-28 14:07:44.620  INFO 30304 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[flash-chat-web-auth,dev] 2026-06-28 14:07:44.631  INFO 30304 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+[flash-chat-web-auth,dev] 2026-06-28 14:07:44.733  INFO 30304 --- [           main] o.s.c.c.s.GenericScope                   : BeanFactory id=757d3744-0e09-3ac3-bb15-e7a8db7f2f18
+[flash-chat-web-auth,dev] 2026-06-28 14:07:45.032  INFO 30304 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8890 (http)
+[flash-chat-web-auth,dev] 2026-06-28 14:07:45.034  INFO 30304 --- [           main] o.a.c.c.AprLifecycleListener             : An older version [1.2.35] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [2.0.5]
+[flash-chat-web-auth,dev] 2026-06-28 14:07:45.035  INFO 30304 --- [           main] o.a.c.c.AprLifecycleListener             : Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+[flash-chat-web-auth,dev] 2026-06-28 14:07:45.036  INFO 30304 --- [           main] o.a.c.c.AprLifecycleListener             : OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+[flash-chat-web-auth,dev] 2026-06-28 14:07:45.040  INFO 30304 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8890"]
+[flash-chat-web-auth,dev] 2026-06-28 14:07:45.041  INFO 30304 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+[flash-chat-web-auth,dev] 2026-06-28 14:07:45.043  INFO 30304 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.19]
+[flash-chat-web-auth,dev] 2026-06-28 14:07:45.075  INFO 30304 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+[flash-chat-web-auth,dev] 2026-06-28 14:07:45.076  INFO 30304 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 710 ms
+[flash-chat-web-auth,dev] 2026-06-28 14:07:46.693  INFO 30304 --- [           main] o.s.c.c.u.InetUtils                      : Cannot determine local hostname
+[flash-chat-web-auth,dev] 2026-06-28 14:07:47.822  INFO 30304 --- [           main] o.s.c.c.u.InetUtils                      : Cannot determine local hostname
+[flash-chat-web-auth,dev] 2026-06-28 14:07:47.841  INFO 30304 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8890"]
+[flash-chat-web-auth,dev] 2026-06-28 14:07:47.849  INFO 30304 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8890 (http) with context path ''
+[flash-chat-web-auth,dev] 2026-06-28 14:07:47.853  INFO 30304 --- [           main] c.a.n.c.naming                           : initializer namespace from ans.namespace attribute : null
+[flash-chat-web-auth,dev] 2026-06-28 14:07:47.853  INFO 30304 --- [           main] c.a.n.c.naming                           : initializer namespace from ALIBABA_ALIWARE_NAMESPACE attribute :null
+[flash-chat-web-auth,dev] 2026-06-28 14:07:47.853  INFO 30304 --- [           main] c.a.n.c.naming                           : initializer namespace from namespace attribute :null
+[flash-chat-web-auth,dev] 2026-06-28 14:07:47.857  INFO 30304 --- [           main] c.a.n.c.naming                           : FailoverDataSource type is class com.alibaba.nacos.client.naming.backups.datasource.DiskFailoverDataSource
+[flash-chat-web-auth,dev] 2026-06-28 14:07:47.859  INFO 30304 --- [           main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+[flash-chat-web-auth,dev] 2026-06-28 14:07:47.860  INFO 30304 --- [           main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+[flash-chat-web-auth,dev] 2026-06-28 14:07:47.862  INFO 30304 --- [           main] c.a.n.c.r.client                         : [RpcClientFactory] create a new rpc client of b60e6520-bfa6-44f6-8342-767baa194667
+[flash-chat-web-auth,dev] 2026-06-28 14:07:47.866  INFO 30304 --- [           main] c.a.n.c.naming                           : Create naming rpc client for uuid->b60e6520-bfa6-44f6-8342-767baa194667
+[flash-chat-web-auth,dev] 2026-06-28 14:07:47.866  INFO 30304 --- [           main] c.a.n.c.r.client                         : [b60e6520-bfa6-44f6-8342-767baa194667] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+[flash-chat-web-auth,dev] 2026-06-28 14:07:47.866  INFO 30304 --- [           main] c.a.n.c.r.client                         : [b60e6520-bfa6-44f6-8342-767baa194667] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+[flash-chat-web-auth,dev] 2026-06-28 14:07:47.867  INFO 30304 --- [           main] c.a.n.c.r.client                         : [b60e6520-bfa6-44f6-8342-767baa194667] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+[flash-chat-web-auth,dev] 2026-06-28 14:07:47.867  INFO 30304 --- [           main] c.a.n.c.r.client                         : [b60e6520-bfa6-44f6-8342-767baa194667] Try to connect to server on start up, server: {serverIp = '127.0.0.1', server main port = 8848}
+[flash-chat-web-auth,dev] 2026-06-28 14:07:47.868  INFO 30304 --- [           main] c.a.n.c.r.c.g.GrpcClient                 : grpc client connection server:127.0.0.1 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+[flash-chat-web-auth,dev] 2026-06-28 14:07:47.881  INFO 30304 --- [           main] c.a.n.c.r.client                         : [b60e6520-bfa6-44f6-8342-767baa194667] Success to connect to server [127.0.0.1:8848] on start up, connectionId = 1782626867875_172.17.0.1_38058
+[flash-chat-web-auth,dev] 2026-06-28 14:07:47.881  INFO 30304 --- [           main] c.a.n.c.r.client                         : [b60e6520-bfa6-44f6-8342-767baa194667] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+[flash-chat-web-auth,dev] 2026-06-28 14:07:47.881  INFO 30304 --- [remote.worker.0] c.a.n.c.r.client                         : [b60e6520-bfa6-44f6-8342-767baa194667] Notify connected event to listeners.
+[flash-chat-web-auth,dev] 2026-06-28 14:07:47.881  INFO 30304 --- [remote.worker.0] c.a.n.c.naming                           : Grpc connection connect
+[flash-chat-web-auth,dev] 2026-06-28 14:07:47.881  INFO 30304 --- [           main] c.a.n.c.r.client                         : [b60e6520-bfa6-44f6-8342-767baa194667] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda/0x00000278cc355cb0
+[flash-chat-web-auth,dev] 2026-06-28 14:07:47.882  INFO 30304 --- [           main] c.a.n.c.naming                           : [REGISTER-SERVICE] public registering service flash-chat-web-auth with instance Instance{instanceId='null', ip='192.168.10.1', port=8890, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={IPv6=null, preserved.register.source=SPRING_CLOUD}}
+[flash-chat-web-auth,dev] 2026-06-28 14:07:47.892  INFO 30304 --- [           main] c.a.c.n.r.NacosServiceRegistry           : nacos registry, DEFAULT_GROUP flash-chat-web-auth 192.168.10.1:8890 register finished
+[flash-chat-web-auth,dev] 2026-06-28 14:07:48.914  INFO 30304 --- [           main] o.s.c.c.u.InetUtils                      : Cannot determine local hostname
+[flash-chat-web-auth,dev] 2026-06-28 14:07:48.919  INFO 30304 --- [           main] i.g.z.a.AuthApplication                  : Started AuthApplication in 7.661 seconds (process running for 7.893)
+[flash-chat-web-auth,dev] 2026-06-28 14:07:48.922  INFO 30304 --- [           main] c.a.n.c.c.i.CacheData                    : config listener notify warn timeout millis use default 60000 millis 
+[flash-chat-web-auth,dev] 2026-06-28 14:07:48.922  INFO 30304 --- [           main] c.a.n.c.c.i.CacheData                    : nacos.cache.data.init.snapshot = true 
+[flash-chat-web-auth,dev] 2026-06-28 14:07:48.923  INFO 30304 --- [           main] c.a.n.c.c.i.ClientWorker                 : [fixed-127.0.0.1_8848] [subscribe] flash-chat-web-auth+DEFAULT_GROUP
+[flash-chat-web-auth,dev] 2026-06-28 14:07:48.927  INFO 30304 --- [           main] c.a.n.c.c.i.CacheData                    : [fixed-127.0.0.1_8848] [add-listener] ok, tenant=, dataId=flash-chat-web-auth, group=DEFAULT_GROUP, cnt=1
+[flash-chat-web-auth,dev] 2026-06-28 14:07:48.927  INFO 30304 --- [           main] c.a.c.n.r.NacosContextRefresher          : [Nacos Config] Listening config: dataId=flash-chat-web-auth, group=DEFAULT_GROUP
+[flash-chat-web-auth,dev] 2026-06-28 14:07:48.928  INFO 30304 --- [           main] c.a.n.c.c.i.ClientWorker                 : [fixed-127.0.0.1_8848] [subscribe] flash-chat-web-auth-dev.yaml+DEFAULT_GROUP
+[flash-chat-web-auth,dev] 2026-06-28 14:07:48.928  INFO 30304 --- [           main] c.a.n.c.c.i.CacheData                    : [fixed-127.0.0.1_8848] [add-listener] ok, tenant=, dataId=flash-chat-web-auth-dev.yaml, group=DEFAULT_GROUP, cnt=1
+[flash-chat-web-auth,dev] 2026-06-28 14:07:48.928  INFO 30304 --- [           main] c.a.c.n.r.NacosContextRefresher          : [Nacos Config] Listening config: dataId=flash-chat-web-auth-dev.yaml, group=DEFAULT_GROUP
+[flash-chat-web-auth,dev] 2026-06-28 14:07:48.929  INFO 30304 --- [           main] c.a.n.c.c.i.ClientWorker                 : [fixed-127.0.0.1_8848] [subscribe] flash-chat-web-auth.yaml+DEFAULT_GROUP
+[flash-chat-web-auth,dev] 2026-06-28 14:07:48.929  INFO 30304 --- [           main] c.a.n.c.c.i.CacheData                    : [fixed-127.0.0.1_8848] [add-listener] ok, tenant=, dataId=flash-chat-web-auth.yaml, group=DEFAULT_GROUP, cnt=1
+[flash-chat-web-auth,dev] 2026-06-28 14:07:48.929  INFO 30304 --- [           main] c.a.c.n.r.NacosContextRefresher          : [Nacos Config] Listening config: dataId=flash-chat-web-auth.yaml, group=DEFAULT_GROUP
+[flash-chat-web-auth,dev] 2026-06-28 14:48:10.901  WARN 30040 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-auth] & group[DEFAULT_GROUP]
+[flash-chat-web-auth,dev] 2026-06-28 14:48:10.908  WARN 30040 --- [           main] c.a.c.n.c.NacosPropertySourceBuilder     : Ignore the empty nacos configuration and get it based on dataId[flash-chat-web-auth.yaml] & group[DEFAULT_GROUP]
+[flash-chat-web-auth,dev] 2026-06-28 14:48:10.927  INFO 30040 --- [           main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-flash-chat-web-auth-dev.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-flash-chat-web-auth.yaml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-flash-chat-web-auth,DEFAULT_GROUP'}]
+[flash-chat-web-auth,dev] 2026-06-28 14:48:10.947  INFO 30040 --- [           main] i.g.z.a.AuthApplication                  : The following 1 profile is active: "dev"
+[flash-chat-web-auth,dev] 2026-06-28 14:48:10.954  INFO 30040 --- [           main] c.a.c.n.c.NacosConfigDataLoader          : [Nacos Config] Load config[dataId=flash-chat-web-auth-dev.yaml, group=DEFAULT_GROUP] success
+[flash-chat-web-auth,dev] 2026-06-28 14:48:11.238  INFO 30040 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+[flash-chat-web-auth,dev] 2026-06-28 14:48:11.242  INFO 30040 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[flash-chat-web-auth,dev] 2026-06-28 14:48:11.253  INFO 30040 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+[flash-chat-web-auth,dev] 2026-06-28 14:48:11.352  INFO 30040 --- [           main] o.s.c.c.s.GenericScope                   : BeanFactory id=757d3744-0e09-3ac3-bb15-e7a8db7f2f18
+[flash-chat-web-auth,dev] 2026-06-28 14:48:11.668  INFO 30040 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8890 (http)
+[flash-chat-web-auth,dev] 2026-06-28 14:48:11.671  INFO 30040 --- [           main] o.a.c.c.AprLifecycleListener             : An older version [1.2.35] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [2.0.5]
+[flash-chat-web-auth,dev] 2026-06-28 14:48:11.671  INFO 30040 --- [           main] o.a.c.c.AprLifecycleListener             : Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+[flash-chat-web-auth,dev] 2026-06-28 14:48:11.673  INFO 30040 --- [           main] o.a.c.c.AprLifecycleListener             : OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+[flash-chat-web-auth,dev] 2026-06-28 14:48:11.678  INFO 30040 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8890"]
+[flash-chat-web-auth,dev] 2026-06-28 14:48:11.679  INFO 30040 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+[flash-chat-web-auth,dev] 2026-06-28 14:48:11.679  INFO 30040 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.19]
+[flash-chat-web-auth,dev] 2026-06-28 14:48:11.718  INFO 30040 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+[flash-chat-web-auth,dev] 2026-06-28 14:48:11.718  INFO 30040 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 763 ms
+[flash-chat-web-auth,dev] 2026-06-28 14:48:13.269  INFO 30040 --- [           main] o.s.c.c.u.InetUtils                      : Cannot determine local hostname
+[flash-chat-web-auth,dev] 2026-06-28 14:48:14.410  INFO 30040 --- [           main] o.s.c.c.u.InetUtils                      : Cannot determine local hostname
+[flash-chat-web-auth,dev] 2026-06-28 14:48:14.433  INFO 30040 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8890"]
+[flash-chat-web-auth,dev] 2026-06-28 14:48:14.441  INFO 30040 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8890 (http) with context path ''
+[flash-chat-web-auth,dev] 2026-06-28 14:48:14.444  INFO 30040 --- [           main] c.a.n.c.naming                           : initializer namespace from ans.namespace attribute : null
+[flash-chat-web-auth,dev] 2026-06-28 14:48:14.444  INFO 30040 --- [           main] c.a.n.c.naming                           : initializer namespace from ALIBABA_ALIWARE_NAMESPACE attribute :null
+[flash-chat-web-auth,dev] 2026-06-28 14:48:14.444  INFO 30040 --- [           main] c.a.n.c.naming                           : initializer namespace from namespace attribute :null
+[flash-chat-web-auth,dev] 2026-06-28 14:48:14.449  INFO 30040 --- [           main] c.a.n.c.naming                           : FailoverDataSource type is class com.alibaba.nacos.client.naming.backups.datasource.DiskFailoverDataSource
+[flash-chat-web-auth,dev] 2026-06-28 14:48:14.451  INFO 30040 --- [           main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+[flash-chat-web-auth,dev] 2026-06-28 14:48:14.452  INFO 30040 --- [           main] c.a.n.p.a.s.c.ClientAuthPluginManager    : [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+[flash-chat-web-auth,dev] 2026-06-28 14:48:14.454  INFO 30040 --- [           main] c.a.n.c.r.client                         : [RpcClientFactory] create a new rpc client of ae4589d2-e243-4f54-b527-f5b901c5de8c
+[flash-chat-web-auth,dev] 2026-06-28 14:48:14.455  INFO 30040 --- [           main] c.a.n.c.naming                           : Create naming rpc client for uuid->ae4589d2-e243-4f54-b527-f5b901c5de8c
+[flash-chat-web-auth,dev] 2026-06-28 14:48:14.455  INFO 30040 --- [           main] c.a.n.c.r.client                         : [ae4589d2-e243-4f54-b527-f5b901c5de8c] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+[flash-chat-web-auth,dev] 2026-06-28 14:48:14.455  INFO 30040 --- [           main] c.a.n.c.r.client                         : [ae4589d2-e243-4f54-b527-f5b901c5de8c] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+[flash-chat-web-auth,dev] 2026-06-28 14:48:14.456  INFO 30040 --- [           main] c.a.n.c.r.client                         : [ae4589d2-e243-4f54-b527-f5b901c5de8c] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+[flash-chat-web-auth,dev] 2026-06-28 14:48:14.456  INFO 30040 --- [           main] c.a.n.c.r.client                         : [ae4589d2-e243-4f54-b527-f5b901c5de8c] Try to connect to server on start up, server: {serverIp = '127.0.0.1', server main port = 8848}
+[flash-chat-web-auth,dev] 2026-06-28 14:48:14.456  INFO 30040 --- [           main] c.a.n.c.r.c.g.GrpcClient                 : grpc client connection server:127.0.0.1 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+[flash-chat-web-auth,dev] 2026-06-28 14:48:14.469  INFO 30040 --- [           main] c.a.n.c.r.client                         : [ae4589d2-e243-4f54-b527-f5b901c5de8c] Success to connect to server [127.0.0.1:8848] on start up, connectionId = 1782629294462_172.17.0.1_38430
+[flash-chat-web-auth,dev] 2026-06-28 14:48:14.470  INFO 30040 --- [           main] c.a.n.c.r.client                         : [ae4589d2-e243-4f54-b527-f5b901c5de8c] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+[flash-chat-web-auth,dev] 2026-06-28 14:48:14.470  INFO 30040 --- [remote.worker.0] c.a.n.c.r.client                         : [ae4589d2-e243-4f54-b527-f5b901c5de8c] Notify connected event to listeners.
+[flash-chat-web-auth,dev] 2026-06-28 14:48:14.470  INFO 30040 --- [           main] c.a.n.c.r.client                         : [ae4589d2-e243-4f54-b527-f5b901c5de8c] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda/0x000001cb1b353980
+[flash-chat-web-auth,dev] 2026-06-28 14:48:14.470  INFO 30040 --- [remote.worker.0] c.a.n.c.naming                           : Grpc connection connect
+[flash-chat-web-auth,dev] 2026-06-28 14:48:14.471  INFO 30040 --- [           main] c.a.n.c.naming                           : [REGISTER-SERVICE] public registering service flash-chat-web-auth with instance Instance{instanceId='null', ip='192.168.10.1', port=8890, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={IPv6=null, preserved.register.source=SPRING_CLOUD}}
+[flash-chat-web-auth,dev] 2026-06-28 14:48:14.479  INFO 30040 --- [           main] c.a.c.n.r.NacosServiceRegistry           : nacos registry, DEFAULT_GROUP flash-chat-web-auth 192.168.10.1:8890 register finished
+[flash-chat-web-auth,dev] 2026-06-28 14:48:15.484  INFO 30040 --- [           main] o.s.c.c.u.InetUtils                      : Cannot determine local hostname
+[flash-chat-web-auth,dev] 2026-06-28 14:48:15.489  INFO 30040 --- [           main] i.g.z.a.AuthApplication                  : Started AuthApplication in 7.788 seconds (process running for 8.106)
+[flash-chat-web-auth,dev] 2026-06-28 14:48:15.491  INFO 30040 --- [           main] c.a.n.c.c.i.CacheData                    : config listener notify warn timeout millis use default 60000 millis 
+[flash-chat-web-auth,dev] 2026-06-28 14:48:15.491  INFO 30040 --- [           main] c.a.n.c.c.i.CacheData                    : nacos.cache.data.init.snapshot = true 
+[flash-chat-web-auth,dev] 2026-06-28 14:48:15.492  INFO 30040 --- [           main] c.a.n.c.c.i.ClientWorker                 : [fixed-127.0.0.1_8848] [subscribe] flash-chat-web-auth+DEFAULT_GROUP
+[flash-chat-web-auth,dev] 2026-06-28 14:48:15.496  INFO 30040 --- [           main] c.a.n.c.c.i.CacheData                    : [fixed-127.0.0.1_8848] [add-listener] ok, tenant=, dataId=flash-chat-web-auth, group=DEFAULT_GROUP, cnt=1
+[flash-chat-web-auth,dev] 2026-06-28 14:48:15.496  INFO 30040 --- [           main] c.a.c.n.r.NacosContextRefresher          : [Nacos Config] Listening config: dataId=flash-chat-web-auth, group=DEFAULT_GROUP
+[flash-chat-web-auth,dev] 2026-06-28 14:48:15.497  INFO 30040 --- [           main] c.a.n.c.c.i.ClientWorker                 : [fixed-127.0.0.1_8848] [subscribe] flash-chat-web-auth-dev.yaml+DEFAULT_GROUP
+[flash-chat-web-auth,dev] 2026-06-28 14:48:15.498  INFO 30040 --- [           main] c.a.n.c.c.i.CacheData                    : [fixed-127.0.0.1_8848] [add-listener] ok, tenant=, dataId=flash-chat-web-auth-dev.yaml, group=DEFAULT_GROUP, cnt=1
+[flash-chat-web-auth,dev] 2026-06-28 14:48:15.498  INFO 30040 --- [           main] c.a.c.n.r.NacosContextRefresher          : [Nacos Config] Listening config: dataId=flash-chat-web-auth-dev.yaml, group=DEFAULT_GROUP
+[flash-chat-web-auth,dev] 2026-06-28 14:48:15.498  INFO 30040 --- [           main] c.a.n.c.c.i.ClientWorker                 : [fixed-127.0.0.1_8848] [subscribe] flash-chat-web-auth.yaml+DEFAULT_GROUP
+[flash-chat-web-auth,dev] 2026-06-28 14:48:15.499  INFO 30040 --- [           main] c.a.n.c.c.i.CacheData                    : [fixed-127.0.0.1_8848] [add-listener] ok, tenant=, dataId=flash-chat-web-auth.yaml, group=DEFAULT_GROUP, cnt=1
+[flash-chat-web-auth,dev] 2026-06-28 14:48:15.499  INFO 30040 --- [           main] c.a.c.n.r.NacosContextRefresher          : [Nacos Config] Listening config: dataId=flash-chat-web-auth.yaml, group=DEFAULT_GROUP
+[flash-chat-web-auth,dev] 2026-06-28 14:54:36.242  INFO 30040 --- [nio-8890-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+[flash-chat-web-auth,dev] 2026-06-28 14:54:36.243  INFO 30040 --- [nio-8890-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+[flash-chat-web-auth,dev] 2026-06-28 14:54:36.244  INFO 30040 --- [nio-8890-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+[flash-chat-web-auth,dev] 2026-06-28 14:54:36.253 ERROR 30040 --- [nio-8890-exec-2] i.g.z.a.e.GlobalExceptionHandler         : /auth/sendSms request error
+
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:265)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:441)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:382)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:126)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:68)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:507)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1283)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1065)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[flash-chat-web-auth,dev] 2026-06-28 14:54:40.233 ERROR 30040 --- [nio-8890-exec-8] i.g.z.a.e.GlobalExceptionHandler         : /auth/sendSms request error
+
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:265)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:441)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:382)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:126)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:68)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:507)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1283)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1065)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+

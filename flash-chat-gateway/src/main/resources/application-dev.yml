@@ -1,0 +1,30 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: auth
+          uri: http://localhost:8890
+          predicates:
+            - Path=/auth/**
+          filters:
+            - StripPrefix=1
+        - id: chat
+          uri: http://localhost:8892
+          predicates:
+            - Path=/chat/**
+          filters:
+            - StripPrefix=1
+        - id: file
+          uri: http://localhost:8891
+          predicates:
+            - Path=/file/**
+          filters:
+            - StripPrefix=1
+        - id: minio-files
+          uri: http://localhost:8891
+          predicates:
+            - Path=/minio-files/**
+        - id: files
+          uri: http://localhost:8891
+          predicates:
+            - Path=/files/**

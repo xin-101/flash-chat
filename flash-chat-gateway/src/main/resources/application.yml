@@ -1,0 +1,51 @@
+
+spring:
+  application:
+    name: flash-chat-gateway
+  profiles:
+    active: dev
+
+  cloud:
+    gateway:
+      routes:
+        - id: auth
+          uri: lb://flash-chat-web-auth
+          predicates:
+            - Path=/auth/**
+          filters:
+            - StripPrefix=1
+          # 聊天路由分发
+        - id: chat
+          uri: lb://flash-chat-web-chat
+          predicates:
+            - Path=/chat/**
+          filters:
+            - StripPrefix=1
+
+        - id: file
+          uri: lb://flash-chat-web-file
+          predicates:
+            - Path=/file/**
+          filters:
+            - StripPrefix=1
+        - id: minio-files
+          uri: lb://flash-chat-web-file
+          predicates:
+            - Path=/minio-files/**
+        - id: files
+          uri: lb://flash-chat-web-file
+          predicates:
+            - Path=/files/**
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOriginPatterns: "*"
+            allowedHeaders: "*"
+            allowedMethods: "*"
+            allowCredentials: true
+
+ip:
+  filter:
+    request-count: 10
+    request-interval: 30
+    black-ip-time: 60
