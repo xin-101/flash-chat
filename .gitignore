@@ -34,3 +34,6 @@ build/
 
 ### Env files ###
 *.env
+
+### IDE / Tool ###
+.claude/
